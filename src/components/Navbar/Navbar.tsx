@@ -14,7 +14,6 @@ const Navbar: FC = () => {
   // }
   return (
     <NavbarContainer>
-      {/* <Logo src={VanLifeLogo} onClick={handleNavigate} /> */}
       <NavbarOptions>
         {allNavbarOptions.map((option, i) => (
           <NavbarOption {...option} key={`${i}-${option.label}`} />
