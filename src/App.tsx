@@ -1,10 +1,16 @@
-import Landing from './containers/Landing/Landing'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+import Landing from 'src/containers/Landing'
 
 import './App.css'
 
 function App() {
   return (
-    <Landing />
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Landing />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
