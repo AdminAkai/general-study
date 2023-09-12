@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 
-export const AboutContainer = styled.div`
+export const MainContainer = styled.div`
   width: 100%;
-  display: flex;
+  height: 100%;
   flex-direction: column;
-  justify-content: center;
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
   background-color: ${({ theme }) => theme.primary};
 `

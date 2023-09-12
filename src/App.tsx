@@ -4,10 +4,9 @@ import { ThemeProvider } from 'styled-components'
 import { selectMode } from './redux/features/settingsSlice/selectors'
 import { useAppSelector } from './redux/store'
 
+import Main from 'src/containers/Main'
 import Landing from 'src/containers/Landing'
 import About from 'src/containers/About'
-
-import Navbar from 'src/components/Navbar'
 
 import theme from './theme'
 
@@ -21,10 +20,11 @@ function App() {
   return (
     <ThemeProvider theme={theme[mode]}>
       <BrowserRouter>
-        <Navbar />
         <Routes>
-          <Route path='/' element={<Landing />} />
-          <Route path='/about' element={<About />} />
+          <Route path='/' element={<Main />}>
+            <Route index element={<Landing />} />
+            <Route path='/about' element={<About />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
