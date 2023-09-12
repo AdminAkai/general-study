@@ -22,6 +22,7 @@ export const LandingPageLogo = styled.div`
 export const LandingPageTitle = styled.h1`
   font-size: 128px;
   color: ${({ theme }) => theme.Adminis};
+  text-align: left;
 `
 
 export const LandingPageSubtext = styled.div`
@@ -29,14 +30,17 @@ export const LandingPageSubtext = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  text-align: left;
 `
 
 export const LandingPageSubtitle = styled.p`
   font-size: 48px;
   color: ${({ theme }) => theme.secondary};
+  text-align: left;
 `
 
 export const LandingPageConstruction = styled.p`
   font-size: 32px;
   color: ${({ theme }) => theme.secondary};
+  text-align: left;
 `

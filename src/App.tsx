@@ -5,6 +5,7 @@ import { selectMode } from './redux/features/settingsSlice/selectors'
 import { useAppSelector } from './redux/store'
 
 import Landing from 'src/containers/Landing'
+import About from 'src/containers/About'
 
 import Navbar from 'src/components/Navbar'
 
@@ -23,6 +24,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={<Landing />} />
+          <Route path='/about' element={<About />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

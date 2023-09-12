@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const NavbarContainer = styled.nav`
   position: absolute;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   background-color: ${({ theme }) => theme.nav};

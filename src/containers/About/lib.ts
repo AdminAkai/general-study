@@ -1,11 +1,6 @@
-interface GridItemObject {
-  name: string
-  route: string
-}
+import { GridItemsType } from 'src/types'
 
-type GridItem = GridItemObject[]
-
-export const GridItems: GridItem = [
+export const GridItems: GridItemsType = [
   {
     name: 'Global Themes Test',
     route: 'https://animated-kitten-2077fb.netlify.app/',

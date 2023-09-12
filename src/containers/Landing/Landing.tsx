@@ -2,6 +2,7 @@ import { FC } from 'react'
 
 import Grid from 'src/components/Grid'
 
+import { GridItems } from './lib'
 import {
   LandingPageConstruction,
   LandingPageContainer,
@@ -23,7 +24,7 @@ const Landing: FC = () => {
           </LandingPageConstruction>
         </LandingPageSubtext>
       </LandingPageLogo>
-      <Grid />
+      <Grid gridItems={GridItems} />
     </LandingPageContainer>
   )
 }
