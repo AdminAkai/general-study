@@ -1,18 +1,18 @@
 import { FC } from 'react'
 
 import GridPanel from 'src/components/GridPanel'
+import CustomLink from 'src/components/CustomLink'
 
+import { GridItems } from './lib'
 import { MainGrid } from './styledComponents'
 
-const currentGrids = 4
-
 const Grid: FC = () => {
-  const allGrids = Array(currentGrids).fill(null)
-
   return (
-    <MainGrid $gridPanels={Math.sqrt(currentGrids)}>
-      {allGrids.map((_, index) => (
-        <GridPanel key={index} />
+    <MainGrid $gridPanels={Math.sqrt(GridItems.length)}>
+      {GridItems.map(({ name, route }, index) => (
+        <GridPanel key={`${name}-${index}`}>
+          <CustomLink to={route}>{name}</CustomLink>
+        </GridPanel>
       ))}
     </MainGrid>
   )

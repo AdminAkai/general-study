@@ -7,11 +7,6 @@ import { allNavbarOptions } from './lib'
 import { NavbarContainer, NavbarOptions } from './styledComponents'
 
 const Navbar: FC = () => {
-  // const navigate = useNavigate()
-
-  // const handleNavigate = () => {
-  //   navigate('/')
-  // }
   return (
     <NavbarContainer>
       <NavbarOptions>

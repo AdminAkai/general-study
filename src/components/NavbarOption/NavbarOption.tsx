@@ -1,7 +1,9 @@
 import { FC, memo } from 'react'
-
-import { NavbarOptionContainer, CustomLink } from './styledComponents'
 import { useLocation } from 'react-router-dom'
+
+import CustomLink from 'src/components/CustomLink'
+
+import { NavbarOptionContainer } from './styledComponents'
 
 interface INavbarOptionProps {
   label: string
@@ -13,7 +15,7 @@ const NavbarOption: FC<INavbarOptionProps> = ({ label, route }) => {
 
   return (
     <NavbarOptionContainer>
-      <CustomLink $isActive={pathname === route} to={route}>
+      <CustomLink $isActive={pathname === route} to={route} nav>
         {label}
       </CustomLink>
     </NavbarOptionContainer>

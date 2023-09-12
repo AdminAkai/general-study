@@ -1,8 +1,10 @@
-import { FC, memo } from 'react'
+import { FC, memo, PropsWithChildren } from 'react'
 
 import { GridPanelBox } from './styledComponents'
 
-const GridPanel: FC = () => <GridPanelBox />
+const GridPanel: FC<PropsWithChildren> = ({ children }) => (
+  <GridPanelBox>{children}</GridPanelBox>
+)
 
 const memoizedGridPanel = memo(GridPanel)
 

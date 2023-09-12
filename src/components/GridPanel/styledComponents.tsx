@@ -5,6 +5,8 @@ export const GridPanelBox = styled.div`
   width: 100%;
   height: 100%;
   background-color: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.Adminis};
+  font-size: 24px;
   grid-area: input;
   grid-column: auto;
   grid-row: auto;
