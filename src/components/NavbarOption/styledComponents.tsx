@@ -9,7 +9,7 @@ export const CustomLink = styled(Link)<{ $isActive: boolean }>`
   &:after {
     display: block;
     content: '';
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid ${({ theme }) => theme.primary};
     transform: ${({ $isActive }) => ($isActive ? 'scaleX(1)' : 'scaleX(0)')};
     transition: transform 0.2s ease-in-out;
   }
@@ -17,11 +17,10 @@ export const CustomLink = styled(Link)<{ $isActive: boolean }>`
   &:hover:after {
     transform: scaleX(1);
   }
-  font-size: 16px;
+  font-size: 24px;
   text-decoration: none;
-  color: gray;
+  color: ${({ theme }) => theme.primary};
   text-align: right;
-  font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 22.923px;

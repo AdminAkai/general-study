@@ -1,13 +1,29 @@
 import { FC } from 'react'
 
-import Navbar from 'src/components/Navbar'
+import Grid from 'src/components/Grid'
 
-import { LandingPageContainer } from './styledComponents'
+import {
+  LandingPageConstruction,
+  LandingPageContainer,
+  LandingPageLogo,
+  LandingPageSubtext,
+  LandingPageSubtitle,
+  LandingPageTitle,
+} from './styledComponents'
 
 const Landing: FC = () => {
   return (
     <LandingPageContainer>
-      <Navbar />
+      <LandingPageLogo>
+        <LandingPageTitle>Adminis</LandingPageTitle>
+        <LandingPageSubtext>
+          <LandingPageSubtitle>Administrate you.</LandingPageSubtitle>
+          <LandingPageConstruction>
+            Under Construction &nbsp;(・-・)7
+          </LandingPageConstruction>
+        </LandingPageSubtext>
+      </LandingPageLogo>
+      <Grid />
     </LandingPageContainer>
   )
 }
