@@ -15,8 +15,7 @@ interface IThemeColors {
 }
 
 interface ITheme {
-  lightTheme: IThemeColors
-  darkTheme: IThemeColors
+  [key: string]: IThemeColors
 }
 
 const colors: IColors = {
@@ -37,7 +36,7 @@ const lightTheme: IThemeColors = {
 
 const darkTheme: IThemeColors = {
   primary: colors.gray,
-  nav: colors.white,
+  nav: colors.orange,
   navOption: colors.gray,
   Adminis: colors.orange,
   secondary: colors.white,

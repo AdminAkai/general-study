@@ -6,7 +6,7 @@ export const NavbarContainer = styled.nav`
   justify-content: flex-end;
   align-items: center;
   width: 100%;
-  background-color: ${({ theme }) => theme.secondary};
+  background-color: ${({ theme }) => theme.nav};
   padding: 32px 48px;
 `
 export const NavbarOptions = styled.div`
