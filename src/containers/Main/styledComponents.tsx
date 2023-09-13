@@ -8,4 +8,9 @@ export const MainContainer = styled.div`
   justify-content: flex-start;
   align-items: center;
   background-color: ${({ theme }) => theme.primary};
+
+  @media screen and (max-width: 700px) {
+    width: 100%;
+    height: auto;
+  }
 `
