@@ -21,4 +21,22 @@ export const GridPanelBox = styled.div`
     background-color: ${({ theme }) => theme.primary};
     transition: background-color 25ms ease-in-out;
   }
+
+  @media screen and (max-width: 700px) {
+    margin-top: 64px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+
+    &:hover {
+      box-shadow: none;
+      background-color: none;
+      transition: none;
+    }
+  }
 `

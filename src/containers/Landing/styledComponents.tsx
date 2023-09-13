@@ -7,6 +7,12 @@ export const LandingPageContainer = styled.div`
   justify-content: center;
   align-items: center;
   background-color: ${({ theme }) => theme.primary};
+
+  @media screen and (max-width: 600px) {
+    padding: 24px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 `
 
 export const LandingPageLogo = styled.div`
@@ -22,12 +28,11 @@ export const LandingPageTitle = styled.h1`
   font-size: 128px;
   color: ${({ theme }) => theme.Adminis};
   text-align: left;
-`
 
-export const LandingPageProjectTitle = styled.h1`
-  font-size: 64px;
-  color: ${({ theme }) => theme.Adminis};
-  text-align: left;
+  @media screen and (max-width: 700px) {
+    font-size: 64px;
+    text-align: center;
+  }
 `
 
 export const LandingPageSubtext = styled.div`
@@ -42,10 +47,18 @@ export const LandingPageSubtitle = styled.p`
   font-size: 48px;
   color: ${({ theme }) => theme.secondary};
   text-align: left;
+  @media screen and (max-width: 700px) {
+    font-size: 24px;
+    text-align: center;
+  }
 `
 
 export const LandingPageConstruction = styled.p`
   font-size: 32px;
   color: ${({ theme }) => theme.secondary};
   text-align: left;
+  @media screen and (max-width: 700px) {
+    font-size: 16px;
+    text-align: center;
+  }
 `
