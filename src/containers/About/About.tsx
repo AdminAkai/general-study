@@ -21,7 +21,7 @@ const About: FC = () => {
         <AboutSummaryText>
           I made Adminis to demonstrate where innovation and passion meet
           technology. I&apos;m Josh Trinidad, the driving force behind this
-          one-man-army company. My journey in the world of programming when I
+          one-man-army company. My journey in the world of programming started
           was in highschool, and I&apos;ve been doing it professionally for a
           little over 8 years now. Over time, I&apos;ve honed my skills, staying
           at the forefront of industry trends and best practices. I love to
@@ -31,14 +31,15 @@ const About: FC = () => {
         <AboutSummaryText>
           Reach out and contact me, either as Adminis or Josh, and let&apos;s
           work together. Whether it&apos;s the next big new project you want to
-          build from the ground up, or a position that needs filling, I&apos;m
-          available for all. Click on any of the panels to the right to get
-          started.
+          build from the ground up, or just a job position that needs filling,
+          I&apos;m available for all. Click on any of the panels to the right to
+          get started.
         </AboutSummaryText>
         <AboutSummaryHeader>Under Construction</AboutSummaryHeader>
         <AboutSummaryText>
           I am currently rebuilding Adminis to use ThreeJS for WebGL and 3D
-          rendering. Stay tuned!
+          rendering, as well as working on a ton of personal projects. Stay
+          tuned!
         </AboutSummaryText>
       </section>
       <Grid panels={GridItems.length}>
