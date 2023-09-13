@@ -9,6 +9,7 @@ export const LandingPageContainer = styled.div`
   background-color: ${({ theme }) => theme.primary};
 
   @media screen and (max-width: 600px) {
+    height: 100vh;
     padding: 24px;
     flex-direction: column;
     justify-content: flex-start;
