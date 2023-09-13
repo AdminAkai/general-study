@@ -1,6 +1,9 @@
 import { FC } from 'react'
 
 import Grid from 'src/components/Grid'
+import GridPanel from 'src/components/GridPanel'
+
+import JoshTrinidadPDF from '../../assets/JoshTrinidadResume.pdf'
 
 import { GridItems } from './lib'
 import {
@@ -10,7 +13,6 @@ import {
   AboutSummaryHeader,
   AboutSummaryText,
 } from './styledComponents'
-import GridPanel from 'src/components/GridPanel'
 
 const About: FC = () => {
   return (
@@ -50,10 +52,7 @@ const About: FC = () => {
           </GridPanel>
         ))}
         <GridPanel>
-          <AboutResume
-            href='../../assets/JoshTrinidadResume.pdf'
-            download='JoshTrinidadResume.pdf'
-          >
+          <AboutResume href={JoshTrinidadPDF} download='JoshTrinidadResume.pdf'>
             Resume
           </AboutResume>
         </GridPanel>
