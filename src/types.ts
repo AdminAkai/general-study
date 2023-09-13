@@ -1,6 +1,9 @@
+import { ElementType } from 'react'
+
 interface GridItemObject {
   name: string
-  route: string
+  props: object
+  Component: ElementType
 }
 
 export type GridItemsType = GridItemObject[]

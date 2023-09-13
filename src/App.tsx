@@ -10,10 +10,6 @@ import About from 'src/containers/About'
 
 import theme from './theme'
 
-import './assets/fonts/stylesheet.css'
-
-import './App.css'
-
 function App() {
   const mode = useAppSelector(selectMode)
 

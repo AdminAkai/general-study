@@ -11,6 +11,7 @@ import {
   LandingPageSubtitle,
   LandingPageTitle,
 } from './styledComponents'
+import GridPanel from 'src/components/GridPanel'
 
 const Landing: FC = () => {
   return (
@@ -24,7 +25,13 @@ const Landing: FC = () => {
           </LandingPageConstruction>
         </LandingPageSubtext>
       </LandingPageLogo>
-      <Grid gridItems={GridItems} />
+      <Grid panels={GridItems.length}>
+        {GridItems.map(({ name, props, Component }, index) => (
+          <GridPanel key={`${name}-${index}`}>
+            <Component {...props}>{name}</Component>
+          </GridPanel>
+        ))}
+      </Grid>
     </LandingPageContainer>
   )
 }

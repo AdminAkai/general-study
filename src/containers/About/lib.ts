@@ -1,12 +1,19 @@
+import CustomLink from 'src/components/CustomLink'
 import { GridItemsType } from 'src/types'
 
 export const GridItems: GridItemsType = [
   {
-    name: 'Global Themes Test',
-    route: 'https://animated-kitten-2077fb.netlify.app/',
+    name: 'LinkedIn',
+    props: {
+      to: 'https://www.linkedin.com/in/josh-adrian-trinidad/',
+    },
+    Component: CustomLink,
   },
   {
-    name: 'Van Life',
-    route: 'https://rainbow-bublanina-7d4b1b.netlify.app/',
+    name: 'Github',
+    props: {
+      to: 'https://github.com/AdminAkai',
+    },
+    Component: CustomLink,
   },
 ]

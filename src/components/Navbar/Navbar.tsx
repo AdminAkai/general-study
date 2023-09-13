@@ -10,7 +10,7 @@ import { NavbarContainer, NavbarOptions } from './styledComponents'
 const Navbar: FC = () => {
   return (
     <NavbarContainer>
-      <CustomLink to='/' nav>
+      <CustomLink to='/' $nav>
         Adminis
       </CustomLink>
       <NavbarOptions>
