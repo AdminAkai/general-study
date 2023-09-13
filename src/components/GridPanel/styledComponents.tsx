@@ -23,7 +23,7 @@ export const GridPanelBox = styled.div`
   }
 
   @media screen and (max-width: 700px) {
-    margin-top: 64px;
+    margin-top: 16px;
     width: 100%;
     height: auto;
     text-align: center;

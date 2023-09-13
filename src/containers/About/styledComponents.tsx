@@ -9,6 +9,15 @@ export const AboutContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   background-color: ${({ theme }) => theme.primary};
+
+  @media screen and (max-width: 700px) {
+    padding: 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
 `
 
 export const AboutHeader = styled.h1`
@@ -23,11 +32,13 @@ export const AboutSummary = styled.section`
 
 export const AboutSummaryHeader = styled.h3`
   color: ${({ theme }) => theme.Adminis};
+  text-align: left;
 `
 
 export const AboutSummaryText = styled.p`
   color: ${({ theme }) => theme.secondary};
   margin-bottom: 24px;
+  text-align: left;
 `
 
 export const AboutResume = styled.a`

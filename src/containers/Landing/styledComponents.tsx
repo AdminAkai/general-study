@@ -22,6 +22,13 @@ export const LandingPageLogo = styled.div`
   text-align: left;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 600px) {
+    padding: 24px;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 24px;
+  }
 `
 
 export const LandingPageTitle = styled.h1`
