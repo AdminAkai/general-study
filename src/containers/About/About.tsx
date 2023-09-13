@@ -38,8 +38,9 @@ const About: FC = () => {
         <AboutSummaryHeader>Under Construction</AboutSummaryHeader>
         <AboutSummaryText>
           I am currently rebuilding Adminis to use ThreeJS for WebGL and 3D
-          rendering, as well as working on a ton of personal projects. Stay
-          tuned!
+          rendering, as well as working on a ton of personal projects. I&apos;ll
+          set them up here, but they&apos;ll also be available on my Github
+          (including the source code for this site). Stay tuned!
         </AboutSummaryText>
       </section>
       <Grid panels={GridItems.length}>
