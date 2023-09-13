@@ -24,6 +24,12 @@ export const LandingPageTitle = styled.h1`
   text-align: left;
 `
 
+export const LandingPageProjectTitle = styled.h1`
+  font-size: 64px;
+  color: ${({ theme }) => theme.Adminis};
+  text-align: left;
+`
+
 export const LandingPageSubtext = styled.div`
   display: flex;
   flex-direction: column;

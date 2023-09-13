@@ -19,19 +19,26 @@ const About: FC = () => {
         <AboutHeader>About Adminis</AboutHeader>
         <AboutSummaryHeader>Meet the Founder, CEO, and CTO</AboutSummaryHeader>
         <AboutSummaryText>
-          Welcome to Adminis, where innovation and passion meet technology.
-          I&apos;m Josh Adrian Trinidad, the driving force behind this
-          one-man-army company. With over 8 years of experience in the world of
-          programming, I have dedicated my career to crafting cutting-edge
-          applications that make a difference.
+          I made Adminis to demonstrate where innovation and passion meet
+          technology. I&apos;m Josh Trinidad, the driving force behind this
+          one-man-army company. My journey in the world of programming when I
+          was in highschool, and I&apos;ve been doing it professionally for a
+          little over 8 years now. Over time, I&apos;ve honed my skills, staying
+          at the forefront of industry trends and best practices. I love to
+          learn, and programming never stops teaching.
         </AboutSummaryText>
         <AboutSummaryHeader>Let&apos;s Work Together</AboutSummaryHeader>
         <AboutSummaryText>
-          My journey in the world of programming began over eight years ago, and
-          I&apos;ve never looked back. Over the years, I&apos;ve honed my
-          skills, staying at the forefront of industry trends and best
-          practices. This experience has equipped me with the knowledge and
-          expertise needed to tackle the most complex coding challenges.
+          Reach out and contact me, either as Adminis or Josh, and let&apos;s
+          work together. Whether it&apos;s the next big new project you want to
+          build from the ground up, or a position that needs filling, I&apos;m
+          available for all. Click on any of the panels to the right to get
+          started.
+        </AboutSummaryText>
+        <AboutSummaryHeader>Under Construction</AboutSummaryHeader>
+        <AboutSummaryText>
+          I am currently rebuilding Adminis to use ThreeJS for WebGL and 3D
+          rendering. Stay tuned!
         </AboutSummaryText>
       </section>
       <Grid panels={GridItems.length}>
