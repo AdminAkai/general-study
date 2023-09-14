@@ -1,8 +1,8 @@
 import { FC } from 'react'
-// import { useNavigate } from 'react-router-dom'
 
 import NavbarOption from 'src/components/NavbarOption'
 import CustomLink from 'src/components/CustomLink'
+import IconRenderer from 'src/components/IconRenderer'
 
 import { allNavbarOptions } from './lib'
 import { NavbarContainer, NavbarOptions } from './styledComponents'
@@ -14,6 +14,7 @@ const Navbar: FC = () => {
         Adminis
       </CustomLink>
       <NavbarOptions>
+        <IconRenderer />
         {allNavbarOptions.map((option, i) => (
           <NavbarOption {...option} key={`${i}-${option.label}`} />
         ))}

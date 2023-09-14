@@ -4,7 +4,7 @@ export enum Mode {
 }
 
 interface ISettingsInitialState {
-  mode: string
+  mode: Mode
 }
 
 const initialState: ISettingsInitialState = {

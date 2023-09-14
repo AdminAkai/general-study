@@ -14,7 +14,9 @@ export const GridPanelBox = styled.div`
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  transition: box-shadow 0.3s ease-in-out;
+  transition:
+    box-shadow 0.3s ease-in-out,
+    background-color 0.3s ease;
 
   &:hover {
     box-shadow: 4px 4px 4px ${({ theme }) => theme.Adminis};
