@@ -6,7 +6,7 @@ export const GridPanelBox = styled.div`
   height: 100%;
   background-color: ${({ theme }) => theme.primary};
   color: ${({ theme }) => theme.Adminis};
-  font-size: 24px;
+  font-size: 1.5rem;
   grid-area: input;
   grid-column: auto;
   grid-row: auto;
@@ -19,13 +19,13 @@ export const GridPanelBox = styled.div`
     background-color 0.3s ease;
 
   &:hover {
-    box-shadow: 4px 4px 4px ${({ theme }) => theme.Adminis};
+    box-shadow: 0.3rem 0.3rem 0.3rem ${({ theme }) => theme.Adminis};
     background-color: ${({ theme }) => theme.primary};
     transition: background-color 25ms ease-in-out;
   }
 
-  @media screen and (max-width: 700px) {
-    margin-top: 16px;
+  @media screen and (max-width: ${({ theme }) => theme.mobileMediaQuery}) {
+    margin-top: 1rem;
     width: 100%;
     height: auto;
     text-align: center;

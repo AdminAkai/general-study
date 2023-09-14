@@ -14,7 +14,7 @@ const SunIcon: FC<ISunIconProps> = ({ mode }) => {
       viewBox='0 0 24 24'
       width='24'
       height='24'
-      style={{ marginBottom: '3px', cursor: 'pointer' }}
+      style={{ marginBottom: '0.19rem', cursor: 'pointer' }}
     >
       <path
         fill={theme[mode].primary}

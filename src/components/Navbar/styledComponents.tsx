@@ -7,7 +7,7 @@ export const NavbarContainer = styled.nav`
   align-items: center;
   width: 100%;
   background-color: ${({ theme }) => theme.nav};
-  padding: 32px 48px;
+  padding: 2rem 3rem;
   transition: background-color 0.3s ease;
 `
 export const NavbarOptions = styled.div`

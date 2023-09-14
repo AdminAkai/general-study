@@ -6,7 +6,11 @@ interface IColors {
   white: '#ffffff'
 }
 
-interface IThemeColors {
+interface IStyleDefaults {
+  mobileMediaQuery: '959px'
+}
+
+interface IThemeColors extends IStyleDefaults {
   primary: string
   nav: string
   navOption: string
@@ -16,6 +20,10 @@ interface IThemeColors {
 
 interface ITheme {
   [key: string]: IThemeColors
+}
+
+const styleDefaults: IStyleDefaults = {
+  mobileMediaQuery: '959px',
 }
 
 const colors: IColors = {
@@ -32,6 +40,7 @@ const lightTheme: IThemeColors = {
   navOption: colors.white,
   Adminis: colors.orange,
   secondary: colors.gray,
+  ...styleDefaults,
 }
 
 const darkTheme: IThemeColors = {
@@ -40,6 +49,7 @@ const darkTheme: IThemeColors = {
   navOption: colors.gray,
   Adminis: colors.orange,
   secondary: colors.white,
+  ...styleDefaults,
 }
 
 const theme: ITheme = {
