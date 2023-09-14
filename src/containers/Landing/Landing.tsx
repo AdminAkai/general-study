@@ -1,6 +1,8 @@
 import { FC } from 'react'
 
 import Grid from 'src/components/Grid'
+import GridPanel from 'src/components/GridPanel'
+import Adminis from 'src/components/Adminis'
 
 import { GridItems } from './lib'
 import {
@@ -11,13 +13,14 @@ import {
   LandingPageSubtitle,
   LandingPageTitle,
 } from './styledComponents'
-import GridPanel from 'src/components/GridPanel'
 
 const Landing: FC = () => {
   return (
     <LandingPageContainer>
       <LandingPageLogo>
-        <LandingPageTitle>Adminis</LandingPageTitle>
+        <LandingPageTitle>
+          <Adminis />
+        </LandingPageTitle>
         <LandingPageSubtext>
           <LandingPageSubtitle>Administrate you.</LandingPageSubtitle>
           <LandingPageConstruction>

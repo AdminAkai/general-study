@@ -2,6 +2,7 @@ import { FC } from 'react'
 
 import Grid from 'src/components/Grid'
 import GridPanel from 'src/components/GridPanel'
+import Adminis from 'src/components/Adminis'
 
 import JoshTrinidadPDF from '../../assets/JoshTrinidadResume.pdf'
 
@@ -18,7 +19,9 @@ const About: FC = () => {
   return (
     <AboutContainer>
       <section>
-        <AboutHeader>About Adminis</AboutHeader>
+        <AboutHeader>
+          About <Adminis />
+        </AboutHeader>
         <AboutSummaryHeader>Meet the Founder, CEO, and CTO</AboutSummaryHeader>
         <AboutSummaryText>
           I made Adminis to demonstrate where innovation and passion meet
