@@ -1,9 +1,11 @@
 import { FC } from 'react'
 
-const Adminis: FC = () => (
-  <span>
-    <span style={{ marginRight: '0.06rem' }}>&lambda;</span>dminis
-  </span>
-)
+import { useHackerScramble } from 'src/hooks/stringHooks'
+
+const Adminis: FC = () => {
+  const word = useHackerScramble('λdminis')
+
+  return <span>{word}</span>
+}
 
 export default Adminis

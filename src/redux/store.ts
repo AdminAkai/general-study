@@ -11,9 +11,9 @@ import {
 } from 'redux-persist'
 import { combineReducers } from 'redux'
 import storage from 'redux-persist/lib/storage'
+import { useDispatch, TypedUseSelectorHook, useSelector } from 'react-redux'
 
 import { settingsSlice } from './features'
-import { useDispatch, TypedUseSelectorHook, useSelector } from 'react-redux'
 
 const persistConfig = {
   key: 'root',
