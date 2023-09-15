@@ -42,13 +42,3 @@ export const getRandomWord = (word: string): string => {
 
   return finalWord
 }
-
-export const XMLtoJSON = async () => {
-  const response = await fetch('src/assets/sitemap.xml')
-
-  const xmlString = await response.text()
-
-  const xmlDoc = new DOMParser().parseFromString(xmlString, 'text/xml')
-
-  return xmlDoc
-}
