@@ -20,8 +20,10 @@ export const CustomATag = styled(Link)<ICustomATagProps>`
   &:hover:after {
     transform: scaleX(1);
   }
+
   font-size: 1.5rem;
   text-decoration: none;
+  user-select: none;
   color: ${({ theme, $nav }) => ($nav ? theme.primary : theme.Adminis)};
   text-align: right;
   font-style: normal;

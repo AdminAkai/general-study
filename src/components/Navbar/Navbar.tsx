@@ -11,7 +11,7 @@ const Navbar: FC = () => {
   return (
     <NavbarContainer>
       <CustomLink to='/' $nav>
-        <span>&lambda;dminis</span>
+        <span style={{ userSelect: 'none' }}>&lambda;dminis</span>
       </CustomLink>
       <NavbarOptions>
         <IconRenderer />
