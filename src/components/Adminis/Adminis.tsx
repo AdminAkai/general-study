@@ -3,7 +3,7 @@ import { FC } from 'react'
 import { useHackerScramble } from 'src/hooks/stringHooks'
 
 const Adminis: FC = () => {
-  const word = useHackerScramble('λdminis')
+  const word: string = useHackerScramble('λdminis')
 
   return <span>{word}</span>
 }

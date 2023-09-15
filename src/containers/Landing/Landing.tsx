@@ -1,5 +1,7 @@
 import { FC } from 'react'
 
+import { useHackerScramble } from 'src/hooks/stringHooks'
+
 import Grid from 'src/components/Grid'
 import GridPanel from 'src/components/GridPanel'
 import Adminis from 'src/components/Adminis'
@@ -15,6 +17,9 @@ import {
 } from './styledComponents'
 
 const Landing: FC = () => {
+  const subtitle = useHackerScramble('Administrate you.')
+  const underConstruction = useHackerScramble('Under Construction (・-・)7')
+
   return (
     <LandingPageContainer>
       <LandingPageLogo>
@@ -22,10 +27,8 @@ const Landing: FC = () => {
           <Adminis />
         </LandingPageTitle>
         <LandingPageSubtext>
-          <LandingPageSubtitle>Administrate you.</LandingPageSubtitle>
-          <LandingPageConstruction>
-            Under Construction &nbsp;(・-・)7
-          </LandingPageConstruction>
+          <LandingPageSubtitle>{subtitle}</LandingPageSubtitle>
+          <LandingPageConstruction>{underConstruction}</LandingPageConstruction>
         </LandingPageSubtext>
       </LandingPageLogo>
       <Grid panels={GridItems.length}>

@@ -17,3 +17,13 @@ export const GridItems: GridItemsType = [
     Component: CustomLink,
   },
 ]
+
+export const AboutText = {
+  summary: `I made Adminis to demonstrate where innovation and passion meet
+    technology. I'm Josh Trinidad, the driving force behind this
+    one-man-army company. My journey in the world of programming started
+    in highschool, and I've been doing it professionally for a little
+    over 8 years now. Over time, I've honed my skills, staying
+    forefront of industry trends and best practices. I love to learn, and
+    programming never stops teaching.`,
+}

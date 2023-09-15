@@ -2,18 +2,18 @@ import { useState, useEffect } from 'react'
 
 import { getRandomLetter } from 'src/utils/stringUtils'
 
-export const useHackerScramble = (initialWord: string) => {
+export const useHackerScramble = (initialWord: string): string => {
   const [word, setWord] = useState<string>('')
   const [start, setStart] = useState<boolean>(false)
 
   useEffect(() => {
     let interval: number | undefined = undefined
     if (start) {
-      let count = 0
-      let globalCount = 0
-      let canChange = false
+      let count: number = 0
+      let globalCount: number = 0
+      let canChange: boolean = false
       interval = setInterval(() => {
-        let newWord = ''
+        let newWord: string = ''
         for (let i = 0; i < initialWord.length; i++) {
           if (i <= count && canChange) {
             newWord += initialWord[i]
@@ -35,10 +35,9 @@ export const useHackerScramble = (initialWord: string) => {
           count = 0
           globalCount = 0
         }
-        console.log(count)
       }, 50)
     }
-    if (word !== 'λdminis' && !start) {
+    if (word !== initialWord && !start) {
       setStart(true)
     }
     return () => clearInterval(interval)
