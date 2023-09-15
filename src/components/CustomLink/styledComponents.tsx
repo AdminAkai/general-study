@@ -25,7 +25,7 @@ export const CustomATag = styled(Link)<ICustomATagProps>`
   text-decoration: none;
   user-select: none;
   color: ${({ theme, $nav }) => ($nav ? theme.primary : theme.Adminis)};
-  text-align: right;
+  text-align: center;
   font-style: normal;
   font-weight: 600;
   line-height: 1.4375rem;

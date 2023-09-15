@@ -3,6 +3,7 @@ import { FC } from 'react'
 import Grid from 'src/components/Grid'
 import GridPanel from 'src/components/GridPanel'
 import Adminis from 'src/components/Adminis'
+import PanelDescription from 'src/components/PanelDescription'
 
 import JoshTrinidadPDF from '../../assets/JoshTrinidadResume.pdf'
 
@@ -50,15 +51,19 @@ const About: FC = () => {
         </AboutSummaryText>
       </section>
       <Grid panels={GridItems.length}>
-        {GridItems.map(({ name, props, Component }, index) => (
+        {GridItems.map(({ name, description, props, Component }, index) => (
           <GridPanel key={`${name}-${index}`}>
             <Component {...props}>{name}</Component>
+            <PanelDescription>{description}</PanelDescription>
           </GridPanel>
         ))}
         <GridPanel>
           <AboutResume href={JoshTrinidadPDF} download='JoshTrinidadResume.pdf'>
             Resume
           </AboutResume>
+          <PanelDescription>
+            My Resume, for those that like to personally download my data
+          </PanelDescription>
         </GridPanel>
       </Grid>
     </AboutContainer>

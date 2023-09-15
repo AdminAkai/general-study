@@ -5,6 +5,7 @@ import { useHackerScramble } from 'src/hooks/stringHooks'
 import Grid from 'src/components/Grid'
 import GridPanel from 'src/components/GridPanel'
 import Adminis from 'src/components/Adminis'
+import PanelDescription from 'src/components/PanelDescription'
 
 import { GridItems } from './lib'
 import {
@@ -32,9 +33,10 @@ const Landing: FC = () => {
         </LandingPageSubtext>
       </LandingPageLogo>
       <Grid panels={GridItems.length}>
-        {GridItems.map(({ name, props, Component }, index) => (
+        {GridItems.map(({ name, description, props, Component }, index) => (
           <GridPanel key={`${name}-${index}`}>
             <Component {...props}>{name}</Component>
+            <PanelDescription>{description}</PanelDescription>
           </GridPanel>
         ))}
       </Grid>

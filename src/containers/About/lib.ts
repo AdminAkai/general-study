@@ -4,6 +4,7 @@ import { GridItemsType } from 'src/types'
 export const GridItems: GridItemsType = [
   {
     name: 'LinkedIn',
+    description: 'Connect, follow, or message me on LinkedIn',
     props: {
       to: 'https://www.linkedin.com/in/josh-adrian-trinidad/',
     },
@@ -11,6 +12,8 @@ export const GridItems: GridItemsType = [
   },
   {
     name: 'Github',
+    description:
+      'Contains the source code for this website and many of my other projects',
     props: {
       to: 'https://github.com/AdminAkai',
     },
