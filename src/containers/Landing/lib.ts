@@ -14,7 +14,7 @@ export const GridItems: GridItemsType = [
   {
     name: 'Game: Cat Chaos',
     description:
-      'One of my very first projects. Custom built game engine in Javascript, using HTML and CSS',
+      'One of my very first projects in Javascript, around 4-5 years old now. Custom built game engine in Javascript, using HTML and CSS',
     props: {
       to: 'https://adminakai.github.io/',
     },
