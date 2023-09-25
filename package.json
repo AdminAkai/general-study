@@ -9,7 +9,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "prepare": "husky install",
-    "test": "jest --coverage --maxConcurrency=4"
+    "test": "jest --setupFilesAfterEnv --coverage --maxConcurrency=4"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
@@ -22,6 +22,7 @@
     "redux": "^4.2.1",
     "redux-persist": "^6.0.0",
     "styled-components": "^6.0.7",
+    "ts-jest": "^29.1.1",
     "ts-node": "^10.9.1"
   },
   "devDependencies": {
@@ -49,6 +50,34 @@
     "prettier": "^3.0.3",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "roots": [
+      "<rootDir>"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json"
+    ],
+    "verbose": true,
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}"
+    ],
+    "coverageDirectory": "coverage",
+    "testEnvironment": "jsdom",
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest.config.ts",
+      "@testing-library/jest-dom/extend-expect"
+    ],
+    "moduleDirectories": ["node_modules", "<rootDir>"]
   },
   "lint-staged": {
     "*.{js,css,ts,tsx,jsx}": [

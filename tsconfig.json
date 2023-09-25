@@ -11,6 +11,7 @@
     "paths": {
       "src/*": ["./src/*"]
     },
+    "esModuleInterop": true,
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -26,6 +27,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "types.d.ts"],
+  "include": ["src", "types.d.ts", "src/jest.config.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
