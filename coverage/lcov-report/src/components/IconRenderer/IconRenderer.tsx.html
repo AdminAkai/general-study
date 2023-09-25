@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">93.75% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/16</span>
+                <span class='fraction'>15/16</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">50% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>1/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">93.75% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/16</span>
+                <span class='fraction'>15/16</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -98,70 +98,70 @@
 <a name='L33'></a><a href='#L33'>33</a>
 <a name='L34'></a><a href='#L34'>34</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { FC } from 'react'
 &nbsp;
-<span class="cstat-no" title="statement not covered" >import { useAppDispatch, useAppSelector } from 'src/redux/store'</span>
-<span class="cstat-no" title="statement not covered" >import { selectMode } from 'src/redux/features/settingsSlice/selectors'</span>
-<span class="cstat-no" title="statement not covered" >import { setMode } from 'src/redux/features/settingsSlice'</span>
-<span class="cstat-no" title="statement not covered" >import { Mode } from 'src/redux/features/settingsSlice/initialState'</span>
+import { useAppDispatch, useAppSelector } from 'src/redux/store'
+import { selectMode } from 'src/redux/features/settingsSlice/selectors'
+import { setMode } from 'src/redux/features/settingsSlice'
+import { Mode } from 'src/redux/features/settingsSlice/initialState'
 &nbsp;
-<span class="cstat-no" title="statement not covered" >import { renderIcon } from './lib'</span>
-<span class="cstat-no" title="statement not covered" >import { IconButton } from './styledComponents'</span>
+import { renderIcon } from './lib'
+import { IconButton } from './styledComponents'
 &nbsp;
-const IconRenderer: FC = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >() =</span>&gt; {</span>
-  const dispatch = <span class="cstat-no" title="statement not covered" >useAppDispatch()</span>
+const IconRenderer: FC = () =&gt; {
+  const dispatch = useAppDispatch()
 &nbsp;
-  const mode: Mode = <span class="cstat-no" title="statement not covered" >useAppSelector(selectMode)</span>
+  const mode: Mode = useAppSelector(selectMode)
 &nbsp;
-  const handleChangeTheme = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >() =</span>&gt; {</span>
-<span class="cstat-no" title="statement not covered" >    if (mode === Mode.DARK) {</span>
-<span class="cstat-no" title="statement not covered" >      dispatch(setMode(Mode.LIGHT))</span>
-    } else {
+  const handleChangeTheme = () =&gt; {
+    if (mode === Mode.DARK) {
+      dispatch(setMode(Mode.LIGHT))
+    } else <span class="missing-if-branch" title="else path not taken" >E</span>{
 <span class="cstat-no" title="statement not covered" >      dispatch(setMode(Mode.DARK))</span>
     }
   }
 &nbsp;
-  const CurrentIcon = <span class="cstat-no" title="statement not covered" >renderIcon[mode]</span>
+  const CurrentIcon = renderIcon[mode]
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return (</span>
-    &lt;IconButton onClick={handleChangeTheme}&gt;
+  return (
+    &lt;IconButton onClick={handleChangeTheme} aria-label='Icon Button'&gt;
       &lt;CurrentIcon mode={mode} /&gt;
     &lt;/IconButton&gt;
   )
 }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >export default IconRenderer</span>
+export default IconRenderer
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -169,7 +169,7 @@ const IconRenderer: FC = <span class="cstat-no" title="statement not covered" ><
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-09-25T10:06:25.935Z
+                at 2023-09-25T23:48:44.616Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>

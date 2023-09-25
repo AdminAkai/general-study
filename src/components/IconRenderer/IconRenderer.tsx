@@ -24,7 +24,7 @@ const IconRenderer: FC = () => {
   const CurrentIcon = renderIcon[mode]
 
   return (
-    <IconButton onClick={handleChangeTheme}>
+    <IconButton onClick={handleChangeTheme} aria-label='Icon Button'>
       <CurrentIcon mode={mode} />
     </IconButton>
   )

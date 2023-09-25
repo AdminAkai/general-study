@@ -2,6 +2,7 @@
 
 exports[`Adminis tests Adminis renders correctly 1`] = `
 <span
+  aria-label="Adminis Title"
   style={
     {
       "userSelect": "none",

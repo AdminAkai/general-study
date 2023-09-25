@@ -5,7 +5,11 @@ import { useHackerScramble } from 'src/hooks/stringHooks'
 const Adminis: FC = () => {
   const word: string = useHackerScramble('λdminis')
 
-  return <span style={{ userSelect: 'none' }}>{word}</span>
+  return (
+    <span style={{ userSelect: 'none' }} aria-label='Adminis Title'>
+      {word}
+    </span>
+  )
 }
 
 export default Adminis

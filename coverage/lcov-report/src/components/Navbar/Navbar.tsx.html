@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/9</span>
+                <span class='fraction'>9/9</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/9</span>
+                <span class='fraction'>9/9</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -91,56 +91,56 @@
 <a name='L26'></a><a href='#L26'>26</a>
 <a name='L27'></a><a href='#L27'>27</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { FC } from 'react'
 &nbsp;
-<span class="cstat-no" title="statement not covered" >import NavbarOption from 'src/components/NavbarOption'</span>
-<span class="cstat-no" title="statement not covered" >import CustomLink from 'src/components/CustomLink'</span>
-<span class="cstat-no" title="statement not covered" >import IconRenderer from 'src/components/IconRenderer'</span>
+import NavbarOption from 'src/components/NavbarOption'
+import CustomLink from 'src/components/CustomLink'
+import IconRenderer from 'src/components/IconRenderer'
 &nbsp;
-<span class="cstat-no" title="statement not covered" >import { allNavbarOptions } from './lib'</span>
-<span class="cstat-no" title="statement not covered" >import { NavbarContainer, NavbarOptions } from './styledComponents'</span>
+import { allNavbarOptions } from './lib'
+import { NavbarContainer, NavbarOptions } from './styledComponents'
 &nbsp;
-const Navbar: FC = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >() =</span>&gt; {</span>
-<span class="cstat-no" title="statement not covered" >  return (</span>
+const Navbar: FC = () =&gt; {
+  return (
     &lt;NavbarContainer&gt;
       &lt;CustomLink to='/' $nav&gt;
         &lt;span style={{ userSelect: 'none' }}&gt;&amp;lambda;dminis&lt;/span&gt;
       &lt;/CustomLink&gt;
       &lt;NavbarOptions&gt;
         &lt;IconRenderer /&gt;
-        {allNavbarOptions.map(<span class="fstat-no" title="function not covered" >(o</span>ption, i) =&gt; (
-<span class="cstat-no" title="statement not covered" >          &lt;NavbarOption {...option} key={`${i}-${option.label}`} /&gt;</span>
+        {allNavbarOptions.map((option, i) =&gt; (
+          &lt;NavbarOption {...option} key={`${i}-${option.label}`} /&gt;
         ))}
       &lt;/NavbarOptions&gt;
     &lt;/NavbarContainer&gt;
   )
 }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >export default Navbar</span>
+export default Navbar
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -148,7 +148,7 @@ const Navbar: FC = <span class="cstat-no" title="statement not covered" ><span c
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-09-25T10:06:25.935Z
+                at 2023-09-25T23:48:44.616Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>

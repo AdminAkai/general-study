@@ -1,17 +1,31 @@
 import { render, screen } from '@testing-library/react'
-import renderer from 'react-test-renderer'
+import renderer, { act } from 'react-test-renderer'
+import '@testing-library/jest-dom'
 
 import Adminis from '../Adminis.tsx'
 
-describe('Adminis tests', () => {
-  jest.useFakeTimers()
-  jest.spyOn(global, 'setInterval')
+const AdminisTitle = 'λdminis'
 
-  it('Should scramble then render Adminis', async () => {
+describe('Adminis tests', () => {
+  beforeEach(() => {
+    jest.useFakeTimers()
+  })
+  afterEach(() => {
+    jest.clearAllTimers()
+  })
+
+  it('Should scramble then render Adminis', () => {
+    const spy = jest.spyOn(global, 'setInterval')
     render(<Adminis />)
-    await jest.advanceTimersByTime(289.166666667)
-    const title = screen.getByText('λdminis')
-    expect(title).toBeInTheDocument()
+    const title = screen.getByLabelText('Adminis Title')
+    expect(spy).toHaveBeenCalled()
+    expect(title).toBeEmptyDOMElement()
+    act(() => {
+      for (let i = 0; i <= AdminisTitle.length; i++) {
+        jest.advanceTimersByTime(310)
+      }
+    })
+    expect(title).toHaveTextContent(AdminisTitle)
   })
 
   it('Adminis renders correctly', () => {

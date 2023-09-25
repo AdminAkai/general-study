@@ -15,6 +15,7 @@ const SunIcon: FC<ISunIconProps> = ({ mode }) => {
       width='24'
       height='24'
       style={{ marginBottom: '0.19rem', cursor: 'pointer', userSelect: 'none' }}
+      aria-label='Sun Icon'
     >
       <path
         fill={theme[mode].primary}
