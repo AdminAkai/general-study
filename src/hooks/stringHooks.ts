@@ -7,7 +7,7 @@ export const useHackerScramble = (initialWord: string): string => {
   const [start, setStart] = useState<boolean>(false)
 
   useEffect(() => {
-    let interval: number | undefined = undefined
+    let interval: NodeJS.Timeout | undefined = undefined
     if (start) {
       let count: number = 0
       let globalCount: number = 0
