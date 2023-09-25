@@ -1,4 +1,4 @@
-# Adminis Construction Changelog
+# Adminis (Under Construction) Changelog
 Website deployed on Amazon S3 and Cloudfront, domain from Google Domains, routed with Amazon Route 53 and SSL secure with Amazon Certificate Manager
 
 09/25/2023 v0.01
