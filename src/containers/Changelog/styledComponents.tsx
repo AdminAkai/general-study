@@ -21,7 +21,7 @@ export const ChangelogContainer = styled.div`
   }
 `
 
-export const AboutHeader = styled.h1`
+export const ChangelogHeader = styled.h1`
   color: ${({ theme }) => theme.Adminis};
   margin-bottom: 1.5rem;
   font-size: 3.5rem;

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1695711722291" clover="3.2.0">
-  <project timestamp="1695711722291" name="All files">
-    <metrics statements="289" coveredstatements="156" conditionals="25" coveredconditionals="17" methods="68" coveredmethods="27" elements="382" coveredelements="200" complexity="0" loc="289" ncloc="289" packages="18" files="51" classes="51"/>
+<coverage generated="1695716862726" clover="3.2.0">
+  <project timestamp="1695716862726" name="All files">
+    <metrics statements="315" coveredstatements="156" conditionals="25" coveredconditionals="17" methods="80" coveredmethods="27" elements="420" coveredelements="200" complexity="0" loc="315" ncloc="315" packages="19" files="56" classes="56"/>
     <package name="src">
-      <metrics statements="26" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <metrics statements="27" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <file name="App.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\App.tsx">
-        <metrics statements="11" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <metrics statements="12" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="2" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
@@ -14,9 +14,10 @@
         <line num="8" count="0" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="30" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
       </file>
       <file name="main.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\main.tsx">
         <metrics statements="9" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -79,7 +80,7 @@
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="2" type="stmt"/>
         <line num="9" count="2" type="stmt"/>
-        <line num="15" count="8" type="stmt"/>
+        <line num="15" count="11" type="stmt"/>
         <line num="20" count="2" type="stmt"/>
       </file>
       <file name="index.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\components\CustomLink\index.ts">
@@ -92,9 +93,9 @@
         <line num="1" count="2" type="stmt"/>
         <line num="3" count="2" type="stmt"/>
         <line num="10" count="2" type="stmt"/>
-        <line num="15" count="8" type="cond" truecount="1" falsecount="1"/>
-        <line num="16" count="8" type="cond" truecount="1" falsecount="1"/>
-        <line num="27" count="8" type="cond" truecount="1" falsecount="1"/>
+        <line num="15" count="11" type="cond" truecount="1" falsecount="1"/>
+        <line num="16" count="11" type="cond" truecount="1" falsecount="1"/>
+        <line num="27" count="11" type="cond" truecount="1" falsecount="1"/>
       </file>
     </package>
     <package name="src.components.Grid">
@@ -197,7 +198,7 @@
         <line num="8" count="1" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
         <line num="11" count="3" type="stmt"/>
-        <line num="19" count="3" type="stmt"/>
+        <line num="19" count="6" type="stmt"/>
         <line num="26" count="1" type="stmt"/>
       </file>
       <file name="index.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\components\Navbar\index.tsx">
@@ -226,8 +227,8 @@
         <line num="4" count="2" type="stmt"/>
         <line num="6" count="2" type="stmt"/>
         <line num="13" count="2" type="stmt"/>
-        <line num="14" count="5" type="stmt"/>
-        <line num="16" count="5" type="stmt"/>
+        <line num="14" count="8" type="stmt"/>
+        <line num="16" count="8" type="stmt"/>
         <line num="25" count="2" type="stmt"/>
         <line num="27" count="2" type="stmt"/>
       </file>
@@ -282,6 +283,49 @@
         <line num="7" count="0" type="stmt"/>
       </file>
       <file name="styledComponents.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\containers\About\styledComponents.tsx">
+        <metrics statements="14" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.containers.Changelog">
+      <metrics statements="25" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="12" coveredmethods="0"/>
+      <file name="Changelog.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\containers\Changelog\Changelog.tsx">
+        <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\containers\Changelog\index.tsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+      </file>
+      <file name="lib.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\containers\Changelog\lib.ts">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+      </file>
+      <file name="loadable.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\containers\Changelog\loadable.ts">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="styledComponents.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\containers\Changelog\styledComponents.tsx">
         <metrics statements="14" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>

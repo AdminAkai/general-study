@@ -57,6 +57,17 @@ exports[`Navbar tests Navbar snapshot renders correctly 1`] = `
         About
       </a>
     </div>
+    <div
+      className="sc-guDMob bTtonf"
+    >
+      <a
+        className="sc-beyTiQ igHIIw"
+        href="/changelog"
+        onClick={[Function]}
+      >
+        Changelog
+      </a>
+    </div>
   </div>
 </nav>
 `;

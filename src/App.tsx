@@ -9,6 +9,7 @@ import Landing from 'src/containers/Landing'
 import About from 'src/containers/About'
 
 import theme from './theme'
+import Changelog from './containers/Changelog/Changelog'
 
 function App() {
   const mode = useAppSelector(selectMode)
@@ -20,6 +21,7 @@ function App() {
           <Route path='/' element={<Main />}>
             <Route index element={<Landing />} />
             <Route path='/about' element={<About />} />
+            <Route path='/changelog' element={<Changelog />} />
           </Route>
         </Routes>
       </BrowserRouter>
