@@ -1,6 +1,6 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit'
 
-import initialState, { Mode } from './initialState'
+import initialState, { Language, Mode } from './initialState'
 
 // Slice
 const settingsSlice = createSlice({
@@ -10,9 +10,12 @@ const settingsSlice = createSlice({
     setMode: (state, { payload }: PayloadAction<Mode>) => {
       state.mode = payload
     },
+    setLanguage: (state, { payload }: PayloadAction<Language>) => {
+      state.language = payload
+    },
   },
 })
 
-export const { setMode } = settingsSlice.actions
+export const { setMode, setLanguage } = settingsSlice.actions
 
 export default settingsSlice.reducer

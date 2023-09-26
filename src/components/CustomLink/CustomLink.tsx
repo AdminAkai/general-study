@@ -12,7 +12,7 @@ const CustomLink: FC<PropsWithChildren<ICustomLinkProps>> = ({
   to,
   children,
 }) => (
-  <CustomATag to={to} $isActive={$isActive} $nav={$nav}>
+  <CustomATag to={to} $isActive={$isActive} $nav={$nav} target='_blank'>
     {children}
   </CustomATag>
 )

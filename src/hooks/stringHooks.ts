@@ -25,7 +25,12 @@ export const useHackerScramble = (initialWord: string): string => {
         if (canChange) {
           count++
         }
-        if (globalCount >= initialWord.length + initialWord.length / 6) {
+        if (
+          globalCount >=
+          initialWord.length +
+            initialWord.length / 6 -
+            (initialWord.length > 10 ? initialWord.length : 0)
+        ) {
           canChange = true
         }
         globalCount++

@@ -6,7 +6,8 @@ export const ChangelogContainer = styled.div`
   padding-left: 4rem;
   padding-right: 4rem;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   background-color: ${({ theme }) => theme.primary};
 
@@ -15,7 +16,6 @@ export const ChangelogContainer = styled.div`
     height: auto;
     text-align: center;
     display: flex;
-    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
   }
@@ -23,22 +23,23 @@ export const ChangelogContainer = styled.div`
 
 export const ChangelogHeader = styled.h1`
   color: ${({ theme }) => theme.Adminis};
-  margin-bottom: 1.5rem;
   font-size: 3.5rem;
+  margin: 0;
+`
+
+export const ChangelogSubtitle = styled.h3`
+  color: ${({ theme }) => theme.secondary};
+  text-align: left;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
 `
 
 export const AboutSummary = styled.section`
   text-align: left;
 `
 
-export const AboutSummaryHeader = styled.h3`
-  color: ${({ theme }) => theme.Adminis};
-  text-align: left;
-`
-
-export const AboutSummaryText = styled.p`
+export const ChangelogBulletPoint = styled.p`
   color: ${({ theme }) => theme.secondary};
-  margin-bottom: 1.5rem;
   text-align: left;
 `
 

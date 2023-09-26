@@ -1,15 +1,38 @@
 import { FC } from 'react'
 
-import { logs } from './lib'
+import { useAppSelector } from 'src/redux/store'
+import { selectLanguage } from 'src/redux/features/settingsSlice/selectors'
+import { Language } from 'src/redux/features/settingsSlice/initialState'
 
-import { ChangelogContainer, ChangelogHeader } from './styledComponents'
+import { logs, sourceCodeLink } from './lib'
+
+import {
+  ChangelogBulletPoint,
+  ChangelogContainer,
+  ChangelogHeader,
+  ChangelogSubtitle,
+} from './styledComponents'
+import { useHackerScramble } from 'src/hooks/stringHooks'
+import CustomLink from 'src/components/CustomLink'
 
 const Changelog: FC = () => {
+  const header = useHackerScramble('Chλngelog')
+  const subtitle = useHackerScramble('Source Code:')
+  const link = useHackerScramble(sourceCodeLink)
+
+  const language: Language = useAppSelector(selectLanguage)
+
   return (
     <ChangelogContainer>
-      <ChangelogHeader>Chλngelog</ChangelogHeader>
+      <ChangelogHeader>{header}</ChangelogHeader>
+      <ChangelogSubtitle>
+        {subtitle}&nbsp;
+        <CustomLink to={sourceCodeLink}>{link}</CustomLink>
+      </ChangelogSubtitle>
       {logs.map((log) =>
-        log.en.map((text, index) => <p key={index}>{text}</p>)
+        log[language].map((text, index) => (
+          <ChangelogBulletPoint key={index}>{text}</ChangelogBulletPoint>
+        ))
       )}
     </ChangelogContainer>
   )
