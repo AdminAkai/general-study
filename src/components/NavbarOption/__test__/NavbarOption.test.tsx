@@ -8,11 +8,11 @@ import store from 'src/redux/store.ts'
 
 import NavbarOption from '../NavbarOption.tsx'
 
-const label = 'About'
-const route = '/about'
+const label: string = 'About'
+const route: string = '/about'
 
-describe('Navbar tests', () => {
-  it('Make sure Navbar renders label and route', () => {
+describe('Navbar Option tests', () => {
+  it('Make sure Navbar Option renders label and route', () => {
     render(
       <Provider store={store}>
         <BrowserRouter>
@@ -27,7 +27,7 @@ describe('Navbar tests', () => {
     expect(navOption).toHaveAttribute('href', '/about')
   })
 
-  it('Navbar renders correctly', () => {
+  it('Navbar Option snapshot renders correctly', () => {
     const tree = renderer
       .create(
         <Provider store={store}>

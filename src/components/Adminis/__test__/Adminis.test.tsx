@@ -4,7 +4,7 @@ import '@testing-library/jest-dom'
 
 import Adminis from '../Adminis.tsx'
 
-const AdminisTitle = 'λdminis'
+const AdminisTitle: string = 'λdminis'
 
 describe('Adminis tests', () => {
   beforeEach(() => {
@@ -28,7 +28,7 @@ describe('Adminis tests', () => {
     expect(title).toHaveTextContent(AdminisTitle)
   })
 
-  it('Adminis renders correctly', () => {
+  it('Adminis snapshot renders correctly', () => {
     const tree = renderer.create(<Adminis />).toJSON()
     expect(tree).toMatchSnapshot()
   })

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Navbar tests Navbar renders correctly 1`] = `
+exports[`Navbar Option tests Navbar Option snapshot renders correctly 1`] = `
 <div
   className="sc-guDMob bTtonf"
 >

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Navbar tests Navbar renders correctly 1`] = `
+exports[`Navbar tests Navbar snapshot renders correctly 1`] = `
 <nav
   className="sc-hLQTFJ gfzTk"
 >

@@ -25,7 +25,7 @@ describe('Navbar tests', () => {
     expect(AdminisTitle).toBeInTheDocument()
   })
 
-  it('Make sure light/dark mode toggle functions', async () => {
+  it('Make sure navbar light/dark mode toggle functions', async () => {
     const user = userEvent.setup()
 
     const { container } = render(
@@ -51,7 +51,7 @@ describe('Navbar tests', () => {
     )
   })
 
-  it('Navbar renders correctly', () => {
+  it('Navbar snapshot renders correctly', () => {
     const tree = renderer
       .create(
         <Provider store={store}>
