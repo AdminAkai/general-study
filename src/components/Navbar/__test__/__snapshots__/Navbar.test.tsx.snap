@@ -8,6 +8,7 @@ exports[`Navbar tests Navbar snapshot renders correctly 1`] = `
     className="sc-beyTiQ igHIIw"
     href="/"
     onClick={[Function]}
+    target="_blank"
   >
     <span
       style={
@@ -53,6 +54,7 @@ exports[`Navbar tests Navbar snapshot renders correctly 1`] = `
         className="sc-beyTiQ igHIIw"
         href="/about"
         onClick={[Function]}
+        target="_blank"
       >
         About
       </a>
@@ -64,6 +66,7 @@ exports[`Navbar tests Navbar snapshot renders correctly 1`] = `
         className="sc-beyTiQ igHIIw"
         href="/changelog"
         onClick={[Function]}
+        target="_blank"
       >
         Changelog
       </a>

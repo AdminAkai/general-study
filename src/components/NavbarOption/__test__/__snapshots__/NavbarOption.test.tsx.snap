@@ -8,6 +8,7 @@ exports[`Navbar Option tests Navbar Option snapshot renders correctly 1`] = `
     className="sc-beyTiQ igHIIw"
     href="/about"
     onClick={[Function]}
+    target="_blank"
   >
     About
   </a>
