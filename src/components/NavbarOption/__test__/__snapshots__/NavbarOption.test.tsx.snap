@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar tests Navbar renders correctly 1`] = `
+<div
+  className="sc-guDMob bTtonf"
+>
+  <a
+    className="sc-beyTiQ igHIIw"
+    href="/about"
+    onClick={[Function]}
+  >
+    About
+  </a>
+</div>
+`;
