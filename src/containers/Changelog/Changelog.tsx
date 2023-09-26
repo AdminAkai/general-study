@@ -27,7 +27,9 @@ const Changelog: FC = () => {
       <ChangelogHeader>{header}</ChangelogHeader>
       <ChangelogSubtitle>
         {subtitle}&nbsp;
-        <CustomLink to={sourceCodeLink}>{link}</CustomLink>
+        <CustomLink to={sourceCodeLink} ariaLabel='Website Github Repo'>
+          {link}
+        </CustomLink>
       </ChangelogSubtitle>
       {logs.map((log) =>
         log[language].map((text, index) => (

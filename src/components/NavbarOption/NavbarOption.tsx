@@ -8,14 +8,20 @@ import { NavbarOptionContainer } from './styledComponents'
 interface INavbarOptionProps {
   label: string
   route: string
+  ariaLabel: string
 }
 
-const NavbarOption: FC<INavbarOptionProps> = ({ label, route }) => {
+const NavbarOption: FC<INavbarOptionProps> = ({ label, route, ariaLabel }) => {
   const { pathname } = useLocation()
 
   return (
     <NavbarOptionContainer>
-      <CustomLink $isActive={pathname === route} to={route} $nav>
+      <CustomLink
+        $isActive={pathname === route}
+        to={route}
+        $nav
+        ariaLabel={ariaLabel}
+      >
         {label}
       </CustomLink>
     </NavbarOptionContainer>
