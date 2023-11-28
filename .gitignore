@@ -11,3 +11,9 @@ dist
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+
+
+# amplify
+node_modules
+.amplify
+amplifyconfiguration*

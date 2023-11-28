@@ -11,7 +11,6 @@ import { useAppDispatch, useAppSelector } from 'src/shared/redux/store'
 import { fetchGithubReposStart } from './redux/landingActions'
 import { selectGithubRepos } from './redux/landingSelectors'
 
-import { GridItems } from './lib'
 import {
   LandingPageConstruction,
   LandingPageContainer,
@@ -20,13 +19,12 @@ import {
   LandingPageSubtitle,
   LandingPageTitle,
 } from './styledComponents'
+import CustomLink from 'src/shared/components/CustomLink'
 
 const Landing: FC = () => {
   const dispatch = useAppDispatch()
 
   const githubRepos: any[] = useAppSelector(selectGithubRepos)
-
-  console.log(githubRepos)
 
   const subtitle = useHackerScramble('Administrate you.')
   const underConstruction = useHackerScramble('Under Construction (・-・)7')
@@ -46,13 +44,16 @@ const Landing: FC = () => {
           <LandingPageConstruction>{underConstruction}</LandingPageConstruction>
         </LandingPageSubtext>
       </LandingPageLogo>
-      <Grid panels={GridItems.length}>
-        {GridItems.map(({ name, description, props, Component }, index) => (
-          <GridPanel key={`${name}-${index}`}>
-            <Component {...props}>{name}</Component>
-            <PanelDescription>{description}</PanelDescription>
-          </GridPanel>
-        ))}
+      <Grid panels={githubRepos.length}>
+        {githubRepos.length !== 0 &&
+          githubRepos.map(({ name, description, html_url }, index) => (
+            <GridPanel key={`${name}-${index}`}>
+              <CustomLink to={html_url} ariaLabel={name}>
+                {name}
+              </CustomLink>
+              <PanelDescription>{description}</PanelDescription>
+            </GridPanel>
+          ))}
       </Grid>
     </LandingPageContainer>
   )
