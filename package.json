@@ -17,6 +17,7 @@
     "@reduxjs/toolkit": "^1.9.5",
     "@types/react-redux": "^7.1.26",
     "aws-amplify": "^6.0.5",
+    "aws-sdk": "^2.1506.0",
     "graphql": "^16.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
