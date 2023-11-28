@@ -1,4 +1,4 @@
-import { GridItemsType } from 'src/shared/types'
+import { GridItemsType } from 'src/shared/types/types'
 
 import CustomLink from 'src/shared/components/CustomLink'
 

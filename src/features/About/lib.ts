@@ -1,5 +1,5 @@
 import CustomLink from 'src/shared/components/CustomLink'
-import { GridItemsType } from 'src/shared/types'
+import { GridItemsType } from 'src/shared/types/types'
 
 export const GridItems: GridItemsType = [
   {

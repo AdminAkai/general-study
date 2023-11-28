@@ -10,13 +10,17 @@ import { NavbarContainer, NavbarOptions } from './styledComponents'
 const Navbar: FC = () => {
   return (
     <NavbarContainer>
-      <CustomLink to='/' $nav>
+      <CustomLink to='/' $nav ariaLabel='home-navbar-link'>
         <span style={{ userSelect: 'none' }}>&lambda;dminis</span>
       </CustomLink>
       <NavbarOptions>
         <IconRenderer />
         {allNavbarOptions.map((option, i) => (
-          <NavbarOption {...option} key={`${i}-${option.label}`} />
+          <NavbarOption
+            {...option}
+            key={`${i}-${option.label}`}
+            ariaLabel={option.label}
+          />
         ))}
       </NavbarOptions>
     </NavbarContainer>
