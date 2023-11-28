@@ -1,15 +1,15 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 
-import { selectMode } from './redux/features/settingsSlice/selectors'
-import { useAppSelector } from './redux/store'
+import { selectMode } from 'src/shared/redux/settingsSlice/selectors'
+import { useAppSelector } from 'src/shared/redux/store'
 
-import Main from 'src/containers/Main'
-import Landing from 'src/containers/Landing'
-import About from 'src/containers/About'
+import Main from 'src/features/Main'
+import Landing from 'src/features/Landing'
+import About from 'src/features/About'
+import Changelog from './features/Changelog'
 
 import theme from './theme'
-import Changelog from './containers/Changelog/Changelog'
 
 function App() {
   const mode = useAppSelector(selectMode)

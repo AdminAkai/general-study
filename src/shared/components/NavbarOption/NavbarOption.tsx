@@ -1,7 +1,7 @@
 import { FC, memo } from 'react'
 import { useLocation } from 'react-router-dom'
 
-import CustomLink from 'src/components/CustomLink'
+import CustomLink from 'src/shared/components/CustomLink'
 
 import { NavbarOptionContainer } from './styledComponents'
 

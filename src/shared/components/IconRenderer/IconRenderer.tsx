@@ -1,9 +1,9 @@
 import { FC } from 'react'
 
-import { useAppDispatch, useAppSelector } from 'src/redux/store'
-import { selectMode } from 'src/redux/features/settingsSlice/selectors'
-import { setMode } from 'src/redux/features/settingsSlice'
-import { Mode } from 'src/redux/features/settingsSlice/initialState'
+import { useAppDispatch, useAppSelector } from 'src/shared/redux/store'
+import { selectMode } from 'src/shared/redux/settingsSlice/selectors'
+import { setMode } from 'src/shared/redux/settingsSlice'
+import { Mode } from 'src/shared/redux/settingsSlice/initialState'
 
 import { renderIcon } from './lib'
 import { IconButton } from './styledComponents'

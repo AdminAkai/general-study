@@ -1,8 +1,8 @@
 import { FC } from 'react'
 
-import NavbarOption from 'src/components/NavbarOption'
-import CustomLink from 'src/components/CustomLink'
-import IconRenderer from 'src/components/IconRenderer'
+import NavbarOption from 'src/shared/components/NavbarOption'
+import CustomLink from 'src/shared/components/CustomLink'
+import IconRenderer from 'src/shared/components/IconRenderer'
 
 import { allNavbarOptions } from './lib'
 import { NavbarContainer, NavbarOptions } from './styledComponents'
