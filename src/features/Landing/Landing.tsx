@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { FC, useEffect } from 'react'
 
 import { useHackerScramble } from 'src/shared/hooks/stringHooks'
 
@@ -16,10 +16,22 @@ import {
   LandingPageSubtitle,
   LandingPageTitle,
 } from './styledComponents'
+import axios from 'axios'
 
 const Landing: FC = () => {
   const subtitle = useHackerScramble('Administrate you.')
   const underConstruction = useHackerScramble('Under Construction (・-・)7')
+
+  useEffect(() => {
+    const fetchGithubRepos = async () => {
+      const data = await axios.get(
+        'https://api.github.com/users/AdminAkai/repos'
+      )
+      console.log(data)
+    }
+
+    fetchGithubRepos()
+  })
 
   return (
     <LandingPageContainer>
