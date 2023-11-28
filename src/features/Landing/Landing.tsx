@@ -1,4 +1,4 @@
-import { FC, useEffect, useMemo } from 'react'
+import { FC, useEffect } from 'react'
 
 import { useHackerScramble } from 'src/shared/hooks/stringHooks'
 
@@ -16,24 +16,18 @@ import {
   LandingPageSubtitle,
   LandingPageTitle,
 } from './styledComponents'
-import axios from 'axios'
+import { fetchGithubReposStart } from './redux/landingActions'
+import { useAppDispatch } from 'src/shared/redux/store'
 
 const Landing: FC = () => {
+  const dispatch = useAppDispatch()
+
   const subtitle = useHackerScramble('Administrate you.')
   const underConstruction = useHackerScramble('Under Construction (・-・)7')
 
-  const allData = useMemo(() => {
-    const fetchGithubRepos = async () => {
-      const { data } = await axios.get(
-        'https://api.github.com/users/AdminAkai/repos'
-      )
-      return data
-    }
-
-    fetchGithubRepos()
+  useEffect(() => {
+    dispatch(fetchGithubReposStart())
   }, [])
-
-  console.log(allData)
 
   return (
     <LandingPageContainer>

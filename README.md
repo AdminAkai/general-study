@@ -21,7 +21,7 @@ Website deployed on Amazon S3 and Cloudfront, domain from Google Domains, routed
 
 **09/25/2023 v0.01**:
 
-- *First official iteration and inclusion of changelog*:
+- _First official iteration and inclusion of changelog_:
 
   - React, Vite, and Typescript are all configured
   - Husky, ESLint, and Prettier are all configured

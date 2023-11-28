@@ -15,6 +15,8 @@ import { useDispatch, TypedUseSelectorHook, useSelector } from 'react-redux'
 import createSagaMiddleware from '@redux-saga/core'
 import { all } from 'redux-saga/effects'
 
+import landingSagas from 'src/features/Landing/redux/landingSagas'
+
 import settingsSlice from './settingsSlice'
 
 const sagas = createSagaMiddleware()
@@ -52,7 +54,7 @@ export const useAppDispatch: DispatchFunc = useDispatch
 export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector
 
 function* rootSaga() {
-  yield all([])
+  yield all([...landingSagas])
 }
 
 sagas.run(rootSaga)
