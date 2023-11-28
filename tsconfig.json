@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "typeRoots": ["./node_modules/@types", "**/*.d.ts"],
+    "typeRoots": ["./node_modules/@types", "types.d.ts"],
     "types": ["jest"],
     "target": "ES2020",
     "useDefineForClassFields": true,
@@ -27,6 +27,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "**/*.d.ts"],
+  "include": ["src", "types.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
