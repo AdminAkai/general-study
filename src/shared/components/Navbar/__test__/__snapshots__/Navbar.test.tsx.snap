@@ -5,6 +5,7 @@ exports[`Navbar tests Navbar snapshot renders correctly 1`] = `
   className="sc-hLQTFJ gfzTk"
 >
   <a
+    aria-label="home-navbar-link"
     className="sc-beyTiQ igHIIw"
     href="/"
     onClick={[Function]}
@@ -51,6 +52,7 @@ exports[`Navbar tests Navbar snapshot renders correctly 1`] = `
       className="sc-guDMob bTtonf"
     >
       <a
+        aria-label="About"
         className="sc-beyTiQ igHIIw"
         href="/about"
         onClick={[Function]}
@@ -63,6 +65,7 @@ exports[`Navbar tests Navbar snapshot renders correctly 1`] = `
       className="sc-guDMob bTtonf"
     >
       <a
+        aria-label="Changelog"
         className="sc-beyTiQ igHIIw"
         href="/changelog"
         onClick={[Function]}

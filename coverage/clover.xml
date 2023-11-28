@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1695746224852" clover="3.2.0">
-  <project timestamp="1695746224852" name="All files">
-    <metrics statements="331" coveredstatements="160" conditionals="29" coveredconditionals="20" methods="83" coveredmethods="28" elements="443" coveredelements="208" complexity="0" loc="331" ncloc="331" packages="19" files="56" classes="56"/>
+<coverage generated="1701159301440" clover="3.2.0">
+  <project timestamp="1701159301440" name="All files">
+    <metrics statements="330" coveredstatements="159" conditionals="29" coveredconditionals="20" methods="82" coveredmethods="27" elements="441" coveredelements="206" complexity="0" loc="330" ncloc="330" packages="19" files="56" classes="56"/>
     <package name="src">
       <metrics statements="27" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <file name="App.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\App.tsx">
@@ -13,7 +13,7 @@
         <line num="7" count="0" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
         <line num="12" count="0" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
@@ -41,6 +41,12 @@
         <line num="60" count="2" type="stmt"/>
       </file>
     </package>
+    <package name="src.@types">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="global.d.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\@types\global.d.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
     <package name="src.assets.icons">
       <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="MoonIcon.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\assets\icons\MoonIcon.tsx">
@@ -58,231 +64,25 @@
         <line num="28" count="2" type="stmt"/>
       </file>
     </package>
-    <package name="src.components.Adminis">
-      <metrics statements="7" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="Adminis.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\components\Adminis\Adminis.tsx">
-        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="4" type="stmt"/>
-        <line num="8" count="4" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-      </file>
-      <file name="index.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\components\Adminis\index.ts">
-        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="0" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.components.CustomLink">
-      <metrics statements="12" coveredstatements="12" conditionals="6" coveredconditionals="3" methods="4" coveredmethods="4"/>
-      <file name="CustomLink.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\components\CustomLink\CustomLink.tsx">
-        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="9" count="2" type="stmt"/>
-        <line num="15" count="11" type="stmt"/>
-        <line num="20" count="2" type="stmt"/>
-      </file>
-      <file name="index.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\components\CustomLink\index.ts">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="2" type="stmt"/>
-        <line num="3" count="2" type="stmt"/>
-      </file>
-      <file name="styledComponents.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\components\CustomLink\styledComponents.tsx">
-        <metrics statements="6" coveredstatements="6" conditionals="6" coveredconditionals="3" methods="3" coveredmethods="3"/>
-        <line num="1" count="2" type="stmt"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="10" count="2" type="stmt"/>
-        <line num="15" count="11" type="cond" truecount="1" falsecount="1"/>
-        <line num="16" count="11" type="cond" truecount="1" falsecount="1"/>
-        <line num="27" count="11" type="cond" truecount="1" falsecount="1"/>
-      </file>
-    </package>
-    <package name="src.components.Grid">
-      <metrics statements="12" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
-      <file name="Grid.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\components\Grid\Grid.tsx">
-        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="3" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-      </file>
-      <file name="index.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\components\Grid\index.tsx">
-        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="0" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
-      </file>
-      <file name="styledComponents.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\components\Grid\styledComponents.tsx">
-        <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
-        <line num="1" count="0" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.components.GridPanel">
-      <metrics statements="15" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
-      <file name="GridPanel.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\components\GridPanel\GridPanel.tsx">
-        <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="1" count="0" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
-      </file>
-      <file name="index.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\components\GridPanel\index.ts">
-        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="0" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
-      </file>
-      <file name="styledComponents.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\components\GridPanel\styledComponents.tsx">
-        <metrics statements="7" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
-        <line num="1" count="0" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="25" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.components.IconRenderer">
-      <metrics statements="23" coveredstatements="22" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
-      <file name="IconRenderer.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\components\IconRenderer\IconRenderer.tsx">
-        <metrics statements="16" coveredstatements="15" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="4" count="2" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="8" count="2" type="stmt"/>
-        <line num="9" count="2" type="stmt"/>
-        <line num="11" count="2" type="stmt"/>
-        <line num="12" count="6" type="stmt"/>
-        <line num="14" count="6" type="stmt"/>
-        <line num="16" count="6" type="stmt"/>
-        <line num="17" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="18" count="1" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="24" count="6" type="stmt"/>
-        <line num="26" count="6" type="stmt"/>
-        <line num="33" count="2" type="stmt"/>
-      </file>
-      <file name="index.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\components\IconRenderer\index.ts">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-      </file>
-      <file name="lib.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\components\IconRenderer\lib.ts">
-        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="2" type="stmt"/>
-        <line num="2" count="2" type="stmt"/>
-        <line num="4" count="2" type="stmt"/>
-      </file>
-      <file name="styledComponents.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\components\IconRenderer\styledComponents.tsx">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="2" type="stmt"/>
-        <line num="3" count="2" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.components.Navbar">
-      <metrics statements="16" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-      <file name="Navbar.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\components\Navbar\Navbar.tsx">
-        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="11" count="3" type="stmt"/>
-        <line num="19" count="6" type="stmt"/>
-        <line num="26" count="1" type="stmt"/>
-      </file>
-      <file name="index.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\components\Navbar\index.tsx">
-        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="0" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
-      </file>
-      <file name="lib.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\components\Navbar\lib.ts">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="7" count="1" type="stmt"/>
-      </file>
-      <file name="styledComponents.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\components\Navbar\styledComponents.tsx">
-        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="9" count="3" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.components.NavbarOption">
-      <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="NavbarOption.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\components\NavbarOption\NavbarOption.tsx">
-        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="2" type="stmt"/>
-        <line num="2" count="2" type="stmt"/>
-        <line num="4" count="2" type="stmt"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="13" count="2" type="stmt"/>
-        <line num="14" count="8" type="stmt"/>
-        <line num="16" count="8" type="stmt"/>
-        <line num="25" count="2" type="stmt"/>
-        <line num="27" count="2" type="stmt"/>
-      </file>
-      <file name="index.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\components\NavbarOption\index.ts">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-      </file>
-      <file name="styledComponents.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\components\NavbarOption\styledComponents.tsx">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="2" type="stmt"/>
-        <line num="3" count="2" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.components.PanelDescription">
-      <metrics statements="9" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <file name="PanelDescription.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\components\PanelDescription\PanelDescription.tsx">
-        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-      </file>
-      <file name="index.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\components\PanelDescription\index.ts">
-        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="0" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
-      </file>
-      <file name="styledComponents.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\components\PanelDescription\styledComponents.tsx">
-        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.containers.About">
+    <package name="src.features.About">
       <metrics statements="21" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="0"/>
-      <file name="index.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\containers\About\index.tsx">
+      <file name="index.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\features\About\index.tsx">
         <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
       </file>
-      <file name="lib.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\containers\About\lib.ts">
+      <file name="lib.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\features\About\lib.ts">
         <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
         <line num="24" count="0" type="stmt"/>
       </file>
-      <file name="loadable.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\containers\About\loadable.ts">
+      <file name="loadable.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\features\About\loadable.ts">
         <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="5" count="0" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
       </file>
-      <file name="styledComponents.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\containers\About\styledComponents.tsx">
+      <file name="styledComponents.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\features\About\styledComponents.tsx">
         <metrics statements="14" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -300,42 +100,42 @@
         <line num="59" count="0" type="stmt"/>
       </file>
     </package>
-    <package name="src.containers.Changelog">
+    <package name="src.features.Changelog">
       <metrics statements="35" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="12" coveredmethods="0"/>
-      <file name="Changelog.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\containers\Changelog\Changelog.tsx">
+      <file name="Changelog.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\features\Changelog\Changelog.tsx">
         <metrics statements="15" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
         <line num="3" count="0" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
         <line num="20" count="0" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
         <line num="23" count="0" type="stmt"/>
         <line num="25" count="0" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="34" count="0" type="stmt"/>
-        <line num="41" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
       </file>
-      <file name="index.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\containers\Changelog\index.tsx">
+      <file name="index.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\features\Changelog\index.tsx">
         <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
       </file>
-      <file name="lib.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\containers\Changelog\lib.ts">
+      <file name="lib.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\features\Changelog\lib.ts">
         <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="7" count="0" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
       </file>
-      <file name="loadable.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\containers\Changelog\loadable.ts">
+      <file name="loadable.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\features\Changelog\loadable.ts">
         <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="5" count="0" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
       </file>
-      <file name="styledComponents.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\containers\Changelog\styledComponents.tsx">
+      <file name="styledComponents.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\features\Changelog\styledComponents.tsx">
         <metrics statements="14" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -353,9 +153,9 @@
         <line num="60" count="0" type="stmt"/>
       </file>
     </package>
-    <package name="src.containers.Landing">
+    <package name="src.features.Landing">
       <metrics statements="34" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="12" coveredmethods="0"/>
-      <file name="Landing.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\containers\Landing\Landing.tsx">
+      <file name="Landing.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\features\Landing\Landing.tsx">
         <metrics statements="13" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="3" count="0" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
@@ -371,22 +171,22 @@
         <line num="37" count="0" type="stmt"/>
         <line num="47" count="0" type="stmt"/>
       </file>
-      <file name="index.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\containers\Landing\index.tsx">
+      <file name="index.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\features\Landing\index.tsx">
         <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
       </file>
-      <file name="lib.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\containers\Landing\lib.ts">
+      <file name="lib.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\features\Landing\lib.ts">
         <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="3" count="0" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
       </file>
-      <file name="loadable.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\containers\Landing\loadable.ts">
+      <file name="loadable.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\features\Landing\loadable.ts">
         <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="5" count="0" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
       </file>
-      <file name="styledComponents.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\containers\Landing\styledComponents.tsx">
+      <file name="styledComponents.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\features\Landing\styledComponents.tsx">
         <metrics statements="15" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -405,9 +205,9 @@
         <line num="69" count="0" type="stmt"/>
       </file>
     </package>
-    <package name="src.containers.Main">
+    <package name="src.features.Main">
       <metrics statements="14" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
-      <file name="Main.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\containers\Main\Main.tsx">
+      <file name="Main.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\features\Main\Main.tsx">
         <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
@@ -416,17 +216,17 @@
         <line num="9" count="0" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
       </file>
-      <file name="index.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\containers\Main\index.tsx">
+      <file name="index.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\features\Main\index.tsx">
         <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
       </file>
-      <file name="loadable.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\containers\Main\loadable.ts">
+      <file name="loadable.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\features\Main\loadable.ts">
         <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="5" count="0" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
       </file>
-      <file name="styledComponents.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\containers\Main\styledComponents.tsx">
+      <file name="styledComponents.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\features\Main\styledComponents.tsx">
         <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -434,9 +234,215 @@
         <line num="13" count="0" type="stmt"/>
       </file>
     </package>
-    <package name="src.hooks">
+    <package name="src.shared.components.Adminis">
+      <metrics statements="7" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Adminis.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\shared\components\Adminis\Adminis.tsx">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+      </file>
+      <file name="index.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\shared\components\Adminis\index.ts">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.shared.components.CustomLink">
+      <metrics statements="12" coveredstatements="12" conditionals="6" coveredconditionals="3" methods="4" coveredmethods="4"/>
+      <file name="CustomLink.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\shared\components\CustomLink\CustomLink.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="17" count="11" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+      </file>
+      <file name="index.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\shared\components\CustomLink\index.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+      </file>
+      <file name="styledComponents.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\shared\components\CustomLink\styledComponents.tsx">
+        <metrics statements="6" coveredstatements="6" conditionals="6" coveredconditionals="3" methods="3" coveredmethods="3"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="15" count="11" type="cond" truecount="1" falsecount="1"/>
+        <line num="16" count="11" type="cond" truecount="1" falsecount="1"/>
+        <line num="27" count="11" type="cond" truecount="1" falsecount="1"/>
+      </file>
+    </package>
+    <package name="src.shared.components.Grid">
+      <metrics statements="12" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
+      <file name="Grid.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\shared\components\Grid\Grid.tsx">
+        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\shared\components\Grid\index.tsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+      </file>
+      <file name="styledComponents.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\shared\components\Grid\styledComponents.tsx">
+        <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.shared.components.GridPanel">
+      <metrics statements="15" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
+      <file name="GridPanel.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\shared\components\GridPanel\GridPanel.tsx">
+        <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+      </file>
+      <file name="index.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\shared\components\GridPanel\index.ts">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+      </file>
+      <file name="styledComponents.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\shared\components\GridPanel\styledComponents.tsx">
+        <metrics statements="7" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.shared.components.IconRenderer">
+      <metrics statements="23" coveredstatements="22" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
+      <file name="IconRenderer.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\shared\components\IconRenderer\IconRenderer.tsx">
+        <metrics statements="16" coveredstatements="15" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="6" type="stmt"/>
+        <line num="14" count="6" type="stmt"/>
+        <line num="16" count="6" type="stmt"/>
+        <line num="17" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="24" count="6" type="stmt"/>
+        <line num="26" count="6" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
+      </file>
+      <file name="index.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\shared\components\IconRenderer\index.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+      <file name="lib.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\shared\components\IconRenderer\lib.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+      </file>
+      <file name="styledComponents.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\shared\components\IconRenderer\styledComponents.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.shared.components.Navbar">
+      <metrics statements="16" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <file name="Navbar.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\shared\components\Navbar\Navbar.tsx">
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="19" count="6" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\shared\components\Navbar\index.tsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+      </file>
+      <file name="lib.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\shared\components\Navbar\lib.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="7" count="1" type="stmt"/>
+      </file>
+      <file name="styledComponents.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\shared\components\Navbar\styledComponents.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.shared.components.NavbarOption">
+      <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="NavbarOption.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\shared\components\NavbarOption\NavbarOption.tsx">
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="8" type="stmt"/>
+        <line num="17" count="8" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
+      </file>
+      <file name="index.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\shared\components\NavbarOption\index.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+      <file name="styledComponents.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\shared\components\NavbarOption\styledComponents.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.shared.components.PanelDescription">
+      <metrics statements="9" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="PanelDescription.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\shared\components\PanelDescription\PanelDescription.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+      </file>
+      <file name="index.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\shared\components\PanelDescription\index.ts">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+      </file>
+      <file name="styledComponents.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\shared\components\PanelDescription\styledComponents.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.shared.hooks">
       <metrics statements="32" coveredstatements="32" conditionals="13" coveredconditionals="12" methods="4" coveredmethods="4"/>
-      <file name="stringHooks.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\hooks\stringHooks.ts">
+      <file name="stringHooks.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\shared\hooks\stringHooks.ts">
         <metrics statements="32" coveredstatements="32" conditionals="13" coveredconditionals="12" methods="4" coveredmethods="4"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -472,9 +478,9 @@
         <line num="51" count="4" type="stmt"/>
       </file>
     </package>
-    <package name="src.redux">
+    <package name="src.shared.redux">
       <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="store.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\redux\store.ts">
+      <file name="store.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\shared\redux\store.ts">
         <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="3" type="stmt"/>
         <line num="2" count="3" type="stmt"/>
@@ -493,16 +499,9 @@
         <line num="49" count="3" type="stmt"/>
       </file>
     </package>
-    <package name="src.redux.features">
-      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="index.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\redux\features\index.ts">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="6" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.redux.features.settingsSlice">
+    <package name="src.shared.redux.settingsSlice">
       <metrics statements="21" coveredstatements="19" conditionals="4" coveredconditionals="4" methods="7" coveredmethods="5"/>
-      <file name="index.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\redux\features\settingsSlice\index.ts">
+      <file name="index.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\shared\redux\settingsSlice\index.ts">
         <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="1" count="3" type="stmt"/>
         <line num="3" count="3" type="stmt"/>
@@ -512,7 +511,7 @@
         <line num="19" count="3" type="stmt"/>
         <line num="21" count="3" type="stmt"/>
       </file>
-      <file name="initialState.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\redux\features\settingsSlice\initialState.ts">
+      <file name="initialState.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\shared\redux\settingsSlice\initialState.ts">
         <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
         <line num="1" count="3" type="cond" truecount="2" falsecount="0"/>
         <line num="2" count="3" type="stmt"/>
@@ -523,7 +522,7 @@
         <line num="16" count="3" type="stmt"/>
         <line num="21" count="3" type="stmt"/>
       </file>
-      <file name="selectors.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\redux\features\settingsSlice\selectors.ts">
+      <file name="selectors.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\shared\redux\settingsSlice\selectors.ts">
         <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
         <line num="1" count="2" type="stmt"/>
         <line num="5" count="3" type="stmt"/>
@@ -533,9 +532,9 @@
         <line num="14" count="0" type="stmt"/>
       </file>
     </package>
-    <package name="src.utils">
+    <package name="src.shared.utils">
       <metrics statements="16" coveredstatements="6" conditionals="4" coveredconditionals="0" methods="5" coveredmethods="2"/>
-      <file name="loadable.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\utils\loadable.tsx">
+      <file name="loadable.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\shared\utils\loadable.tsx">
         <metrics statements="6" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -544,7 +543,7 @@
         <line num="10" count="0" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
       </file>
-      <file name="stringUtils.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\utils\stringUtils.ts">
+      <file name="stringUtils.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\shared\utils\stringUtils.ts">
         <metrics statements="10" coveredstatements="6" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="273" type="stmt"/>
