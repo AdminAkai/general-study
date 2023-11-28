@@ -21,7 +21,6 @@ Website deployed on Amazon S3 and Cloudfront, domain from Google Domains, routed
     - Accessbility and SEO are still accounted for during these changes
   - Continue to improve temp site design and user flower
 
-
 09/25/2023 v0.01:
 
 - First official iteration and inclusion of changelog:
