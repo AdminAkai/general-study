@@ -1,4 +1,4 @@
-import { FC, useEffect } from 'react'
+import { FC, useEffect, useMemo } from 'react'
 
 import { useHackerScramble } from 'src/shared/hooks/stringHooks'
 
@@ -22,16 +22,18 @@ const Landing: FC = () => {
   const subtitle = useHackerScramble('Administrate you.')
   const underConstruction = useHackerScramble('Under Construction (・-・)7')
 
-  useEffect(() => {
+  const allData = useMemo(() => {
     const fetchGithubRepos = async () => {
-      const data = await axios.get(
+      const { data } = await axios.get(
         'https://api.github.com/users/AdminAkai/repos'
       )
-      console.log(data)
+      return data
     }
 
     fetchGithubRepos()
-  })
+  }, [])
+
+  console.log(allData)
 
   return (
     <LandingPageContainer>
