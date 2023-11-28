@@ -16,6 +16,7 @@ import createSagaMiddleware from '@redux-saga/core'
 import { all } from 'redux-saga/effects'
 
 import landingSagas from 'src/features/Landing/redux/landingSagas'
+import landingSlice from 'src/features/Landing/redux/landingSlice'
 
 import settingsSlice from './settingsSlice'
 
@@ -28,6 +29,7 @@ const persistConfig = {
 
 const reducers = combineReducers({
   settings: settingsSlice,
+  landing: landingSlice,
 })
 
 const persistedReducer = persistReducer(persistConfig, reducers)

@@ -6,6 +6,10 @@ import Grid from 'src/shared/components/Grid'
 import GridPanel from 'src/shared/components/GridPanel'
 import Adminis from 'src/shared/components/Adminis'
 import PanelDescription from 'src/shared/components/PanelDescription'
+import { useAppDispatch, useAppSelector } from 'src/shared/redux/store'
+
+import { fetchGithubReposStart } from './redux/landingActions'
+import { selectGithubRepos } from './redux/landingSelectors'
 
 import { GridItems } from './lib'
 import {
@@ -16,11 +20,13 @@ import {
   LandingPageSubtitle,
   LandingPageTitle,
 } from './styledComponents'
-import { fetchGithubReposStart } from './redux/landingActions'
-import { useAppDispatch } from 'src/shared/redux/store'
 
 const Landing: FC = () => {
   const dispatch = useAppDispatch()
+
+  const githubRepos: any[] = useAppSelector(selectGithubRepos)
+
+  console.log(githubRepos)
 
   const subtitle = useHackerScramble('Administrate you.')
   const underConstruction = useHackerScramble('Under Construction (・-・)7')
