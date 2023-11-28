@@ -6,14 +6,12 @@ Website deployed on Amazon S3 and Cloudfront, domain from Google Domains, routed
 
 ## Changelog
 
-11/28/2023 v0.02:
+**11/28/2023 v0.02**:
 
-- Second iteration:
-
-  - Jest unit tests set up and isolated from Playwright tests
-  - Added Github Repo api
-  - Entire architecture overhauled to fit microfrontend paradigm
-  - Redux Saga added, Landing page redux sector added for Github repo fetch
+- Jest unit tests set up and isolated from Playwright tests
+- Added Github Repo api
+- Entire architecture overhauled to fit microfrontend paradigm
+- Redux Saga added, Landing page redux sector added for Github repo fetch
 
 - Future Steps:
   - Write out Playwright E2E tests
@@ -21,9 +19,9 @@ Website deployed on Amazon S3 and Cloudfront, domain from Google Domains, routed
     - Accessbility and SEO are still accounted for during these changes
   - Continue to improve temp site design and user flower
 
-09/25/2023 v0.01:
+**09/25/2023 v0.01**:
 
-- First official iteration and inclusion of changelog:
+- *First official iteration and inclusion of changelog*:
 
   - React, Vite, and Typescript are all configured
   - Husky, ESLint, and Prettier are all configured
