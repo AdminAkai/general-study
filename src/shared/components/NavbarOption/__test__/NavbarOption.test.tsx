@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import '@testing-library/jest-dom'
 
-import store from 'src/redux/store.ts'
+import store from 'src/shared/redux/store.ts'
 
 import NavbarOption from '../NavbarOption.tsx'
 
@@ -16,7 +16,11 @@ describe('Navbar Option tests', () => {
     render(
       <Provider store={store}>
         <BrowserRouter>
-          <NavbarOption label={label} route={route} />
+          <NavbarOption
+            label={label}
+            route={route}
+            ariaLabel='test-navbar-option'
+          />
         </BrowserRouter>
       </Provider>
     )
@@ -32,7 +36,11 @@ describe('Navbar Option tests', () => {
       .create(
         <Provider store={store}>
           <BrowserRouter>
-            <NavbarOption label={label} route={route} />
+            <NavbarOption
+              label={label}
+              route={route}
+              ariaLabel='test-navbar-option'
+            />
           </BrowserRouter>
         </Provider>
       )

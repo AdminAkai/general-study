@@ -5,7 +5,7 @@ import { Provider } from 'react-redux'
 import userEvent from '@testing-library/user-event'
 import '@testing-library/jest-dom'
 
-import store from 'src/redux/store.ts'
+import store from 'src/shared/redux/store.ts'
 
 import Navbar from '../Navbar.tsx'
 import theme from 'src/theme.ts'

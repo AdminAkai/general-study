@@ -5,7 +5,7 @@ import GridPanel from 'src/shared/components/GridPanel'
 import Adminis from 'src/shared/components/Adminis'
 import PanelDescription from 'src/shared/components/PanelDescription'
 
-import JoshTrinidadPDF from 'src/assets/JoshTrinidadResume.pdf'
+import JoshTrinidadPDF from 'src/assets/JoshTrinidad.pdf'
 
 import { GridItems } from './lib'
 import {

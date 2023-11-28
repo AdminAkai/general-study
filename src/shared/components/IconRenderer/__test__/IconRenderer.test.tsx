@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer'
 import { Provider } from 'react-redux'
 import '@testing-library/jest-dom'
 
-import store from 'src/redux/store.ts'
+import store from 'src/shared/redux/store.ts'
 
 import IconRenderer from '../IconRenderer.tsx'
 

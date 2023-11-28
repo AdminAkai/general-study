@@ -1,6 +1,6 @@
 import { createSelector } from '@reduxjs/toolkit'
 
-import { RootState } from 'src/redux/store'
+import { RootState } from 'src/shared/redux/store'
 
 const selectSettingsSliceReducer = (state: RootState) => state.settings
 
