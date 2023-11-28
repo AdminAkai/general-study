@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { Outlet } from 'react-router-dom'
 
-import Navbar from 'src/components/Navbar'
+import Navbar from 'src/shared/components/Navbar'
 
 import { MainContainer } from './styledComponents'
 

@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import { useHackerScramble } from 'src/hooks/stringHooks'
+import { useHackerScramble } from 'src/shared/hooks/stringHooks'
 
 const Adminis: FC = () => {
   const word: string = useHackerScramble('λdminis')

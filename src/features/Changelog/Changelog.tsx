@@ -1,8 +1,12 @@
 import { FC } from 'react'
 
-import { useAppSelector } from 'src/redux/store'
-import { selectLanguage } from 'src/redux/features/settingsSlice/selectors'
-import { Language } from 'src/redux/features/settingsSlice/initialState'
+import CustomLink from 'src/shared/components/CustomLink'
+
+import { useHackerScramble } from 'src/shared/hooks/stringHooks'
+
+import { useAppSelector } from 'src/shared/redux/store'
+import { selectLanguage } from 'src/shared/redux/settingsSlice/selectors'
+import { Language } from 'src/shared/redux/settingsSlice/initialState'
 
 import { logs, sourceCodeLink } from './lib'
 
@@ -12,8 +16,6 @@ import {
   ChangelogHeader,
   ChangelogSubtitle,
 } from './styledComponents'
-import { useHackerScramble } from 'src/hooks/stringHooks'
-import CustomLink from 'src/components/CustomLink'
 
 const Changelog: FC = () => {
   const header = useHackerScramble('Chλngelog')

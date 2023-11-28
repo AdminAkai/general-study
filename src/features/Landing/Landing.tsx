@@ -1,11 +1,11 @@
 import { FC } from 'react'
 
-import { useHackerScramble } from 'src/hooks/stringHooks'
+import { useHackerScramble } from 'src/shared/hooks/stringHooks'
 
-import Grid from 'src/components/Grid'
-import GridPanel from 'src/components/GridPanel'
-import Adminis from 'src/components/Adminis'
-import PanelDescription from 'src/components/PanelDescription'
+import Grid from 'src/shared/components/Grid'
+import GridPanel from 'src/shared/components/GridPanel'
+import Adminis from 'src/shared/components/Adminis'
+import PanelDescription from 'src/shared/components/PanelDescription'
 
 import { GridItems } from './lib'
 import {
