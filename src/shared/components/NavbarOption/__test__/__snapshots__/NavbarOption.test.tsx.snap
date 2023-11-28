@@ -5,7 +5,7 @@ exports[`Navbar Option tests Navbar Option snapshot renders correctly 1`] = `
   className="sc-guDMob bTtonf"
 >
   <a
-    aria-label="test-navbar-option"
+    aria-label="About"
     className="sc-beyTiQ igHIIw"
     href="/about"
     onClick={[Function]}

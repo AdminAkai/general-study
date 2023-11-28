@@ -16,11 +16,7 @@ describe('Navbar Option tests', () => {
     render(
       <Provider store={store}>
         <BrowserRouter>
-          <NavbarOption
-            label={label}
-            route={route}
-            ariaLabel='test-navbar-option'
-          />
+          <NavbarOption label={label} route={route} ariaLabel='About' />
         </BrowserRouter>
       </Provider>
     )
@@ -36,11 +32,7 @@ describe('Navbar Option tests', () => {
       .create(
         <Provider store={store}>
           <BrowserRouter>
-            <NavbarOption
-              label={label}
-              route={route}
-              ariaLabel='test-navbar-option'
-            />
+            <NavbarOption label={label} route={route} ariaLabel='About' />
           </BrowserRouter>
         </Provider>
       )

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1701159301440" clover="3.2.0">
-  <project timestamp="1701159301440" name="All files">
-    <metrics statements="330" coveredstatements="159" conditionals="29" coveredconditionals="20" methods="82" coveredmethods="27" elements="441" coveredelements="206" complexity="0" loc="330" ncloc="330" packages="19" files="56" classes="56"/>
+<coverage generated="1701189692311" clover="3.2.0">
+  <project timestamp="1701189692311" name="All files">
+    <metrics statements="330" coveredstatements="159" conditionals="29" coveredconditionals="20" methods="82" coveredmethods="27" elements="441" coveredelements="206" complexity="0" loc="330" ncloc="330" packages="18" files="55" classes="55"/>
     <package name="src">
       <metrics statements="27" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <file name="App.tsx" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\App.tsx">
@@ -39,12 +39,6 @@
         <line num="46" count="2" type="stmt"/>
         <line num="55" count="2" type="stmt"/>
         <line num="60" count="2" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.@types">
-      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="global.d.ts" path="C:\Users\joshi\OneDrive\Documents\code\personal\Adminis-construction\src\@types\global.d.ts">
-        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="src.assets.icons">
