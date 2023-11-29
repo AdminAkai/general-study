@@ -9,7 +9,6 @@ import {
   gql,
   createHttpLink,
 } from '@apollo/client'
-import { SSM } from 'aws-sdk'
 import { setContext } from '@apollo/client/link/context'
 
 import store, { persistor } from 'src/shared/redux/store.ts'
@@ -24,20 +23,11 @@ const httpLink = createHttpLink({
   uri: 'https://api.github.com/graphql',
 })
 
-const authLink = setContext(async (_, { headers }) => {
-  // return the headers to the context so httpLink can read them
-
-  const { Parameter } = await new SSM()
-    .getParameter({
-      Name: 'GITHUB_TOKEN',
-      WithDecryption: true,
-    })
-    .promise()
-
+const authLink = setContext((_, { headers }) => {
   return {
     headers: {
       ...headers,
-      authorization: Parameter ? `Bearer ${Parameter}` : '',
+      authorization: process.env.secrets ? `Bearer ${process.env.secrets}` : '',
     },
   }
 })
