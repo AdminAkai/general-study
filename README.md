@@ -9,15 +9,22 @@ Website deployed on Amazon S3 and Cloudfront, domain from Google Domains, routed
 **11/28/2023 v0.02**:
 
 - Jest unit tests set up and isolated from Playwright tests
-- Added Github Repo api
+  - They pass but currently a bug in Vite with import.meta and Jest causes two failures in main.tsx testing so not worth pushing up coverage or using in pipeline... yet
+- Added Github Repo api, fine-grained api key included to fetch public repos so the site automatically updates itself with my work
 - Entire architecture overhauled to fit microfrontend paradigm
 - Redux Saga added, Landing page redux sector added for Github repo fetch
+- Apollo Client used for graphQL added
 
 - Future Steps:
   - Write out Playwright E2E tests
   - Continuous work on React ThreeJS for the eventual overhaul of design and interactivity
     - Accessbility and SEO are still accounted for during these changes
   - Continue to improve temp site design and user flower
+  - Amplify Gen2 has no custom domain functionality yet:
+    - .env file pushed up temporarily, bad practice but the api key used is fine-grained and readonly for public repos only
+    - S3 bucket with Cloudfront distribution for now, will later move to Amplify hosting as a simple backend will be needed
+  - Animations using Framer Motion and loading UI as well as error routing and handling
+  - May switch to Vitest if Jest bug with import.meta is solved in optimal time as testing is important for production
 
 **09/25/2023 v0.01**:
 
