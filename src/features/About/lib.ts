@@ -7,8 +7,9 @@ export const GridItems: GridItemsType = [
     description: 'Connect, follow, or message me on LinkedIn',
     props: {
       to: 'https://www.linkedin.com/in/josh-adrian-trinidad/',
+      ariaLabel: 'LinkedIn-Josh-Adrian-Trinidad',
     },
-    Component: CustomLink,
+    Link: CustomLink,
   },
   {
     name: 'Github',
@@ -16,8 +17,9 @@ export const GridItems: GridItemsType = [
       'Contains the source code for this website and many of my other projects',
     props: {
       to: 'https://github.com/AdminAkai',
+      ariaLabel: 'Github-Josh-Adrian-Trinidad',
     },
-    Component: CustomLink,
+    Link: CustomLink,
   },
 ]
 

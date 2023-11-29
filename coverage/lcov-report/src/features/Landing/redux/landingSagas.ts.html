@@ -3,15 +3,15 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/main.tsx</title>
+    <title>Code coverage report for src/features/Landing/redux/landingSagas.ts</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../prettify.css" />
-    <link rel="stylesheet" href="../base.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(../sort-arrow-sprite.png);
+            background-image: url(../../../../sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -19,7 +19,7 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">src</a> main.tsx</h1>
+        <h1><a href="../../../../index.html">All files</a> / <a href="index.html">src/features/Landing/redux</a> landingSagas.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
@@ -37,9 +37,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/0</span>
+                <span class='fraction'>0/2</span>
             </div>
         
             
@@ -85,50 +85,74 @@
 <a name='L20'></a><a href='#L20'>20</a>
 <a name='L21'></a><a href='#L21'>21</a>
 <a name='L22'></a><a href='#L22'>22</a>
-<a name='L23'></a><a href='#L23'>23</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import React from 'react'</span>
-<span class="cstat-no" title="statement not covered" >import ReactDOM from 'react-dom/client'</span>
-<span class="cstat-no" title="statement not covered" >import { Provider } from 'react-redux'</span>
-<span class="cstat-no" title="statement not covered" >import { PersistGate } from 'redux-persist/integration/react'</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import {</span>
+  takeLatest,
+  call,
+  put,
+  fork,
+  CallEffect,
+  PutEffect,
+} from 'redux-saga/effects'
+import { AnyAction } from 'redux'
 &nbsp;
-<span class="cstat-no" title="statement not covered" >import store, { persistor } from 'src/shared/redux/store.ts'</span>
+<span class="cstat-no" title="statement not covered" >import { fetchGithubReposStart } from './landingActions'</span>
+<span class="cstat-no" title="statement not covered" >import { setGithubRepos } from './landingSlice'</span>
+<span class="cstat-no" title="statement not covered" >import { fetchGithubReposCall } from './landingApi'</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >import App from './App.tsx'</span>
+// Worker Sagas
+function* <span class="fstat-no" title="function not covered" >fetchGithubRepos(</span>): Generator&lt;
+  CallEffect&lt;any[]&gt; | PutEffect&lt;AnyAction&gt;
+&gt; {
+  const githubRepos: any = <span class="cstat-no" title="statement not covered" >yield call(fetchGithubReposCall)</span>
+<span class="cstat-no" title="statement not covered" >  yield put(setGithubRepos(githubRepos))</span>
+}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >import './assets/fonts/stylesheet.css'</span>
+// Watcher Sagas
+function* <span class="fstat-no" title="function not covered" >watchUpdateGithubRepos(</span>) {
+<span class="cstat-no" title="statement not covered" >  yield takeLatest(fetchGithubReposStart, fetchGithubRepos)</span>
+}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >import './main.css'</span>
+const landingSagas = <span class="cstat-no" title="statement not covered" >[fork(watchUpdateGithubRepos)]</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >ReactDOM.createRoot(document.getElementById('root')!).render(</span>
-  &lt;React.StrictMode&gt;
-    &lt;Provider store={store}&gt;
-      &lt;PersistGate persistor={persistor}&gt;
-        &lt;App /&gt;
-      &lt;/PersistGate&gt;
-    &lt;/Provider&gt;
-  &lt;/React.StrictMode&gt;
-)
+<span class="cstat-no" title="statement not covered" >export default landingSagas</span>
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -136,16 +160,16 @@
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-11-28T16:41:32.269Z
+                at 2023-11-29T11:59:19.557Z
             </div>
-        <script src="../prettify.js"></script>
+        <script src="../../../../prettify.js"></script>
         <script>
             window.onload = function () {
                 prettyPrint();
             };
         </script>
-        <script src="../sorter.js"></script>
-        <script src="../block-navigation.js"></script>
+        <script src="../../../../sorter.js"></script>
+        <script src="../../../../block-navigation.js"></script>
     </body>
 </html>
     

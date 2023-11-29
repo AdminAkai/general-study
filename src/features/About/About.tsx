@@ -54,9 +54,9 @@ const About: FC = () => {
         </AboutSummaryText>
       </section>
       <Grid panels={GridItems.length}>
-        {GridItems.map(({ name, description, props, Component }, index) => (
+        {GridItems.map(({ name, description, props, Link }, index) => (
           <GridPanel key={`${name}-${index}`}>
-            <Component {...props}>{name}</Component>
+            <Link {...props}>{name}</Link>
             <PanelDescription>{description}</PanelDescription>
           </GridPanel>
         ))}

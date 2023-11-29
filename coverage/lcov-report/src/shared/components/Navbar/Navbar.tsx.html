@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>9/9</span>
+                <span class='fraction'>0/9</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>0/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>9/9</span>
+                <span class='fraction'>0/9</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -95,25 +95,23 @@
 <a name='L30'></a><a href='#L30'>30</a>
 <a name='L31'></a><a href='#L31'>31</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -122,26 +120,28 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { FC } from 'react'
 &nbsp;
-import NavbarOption from 'src/shared/components/NavbarOption'
-import CustomLink from 'src/shared/components/CustomLink'
-import IconRenderer from 'src/shared/components/IconRenderer'
+<span class="cstat-no" title="statement not covered" >import NavbarOption from 'src/shared/components/NavbarOption'</span>
+<span class="cstat-no" title="statement not covered" >import CustomLink from 'src/shared/components/CustomLink'</span>
+<span class="cstat-no" title="statement not covered" >import IconRenderer from 'src/shared/components/IconRenderer'</span>
 &nbsp;
-import { allNavbarOptions } from './lib'
-import { NavbarContainer, NavbarOptions } from './styledComponents'
+<span class="cstat-no" title="statement not covered" >import { allNavbarOptions } from './lib'</span>
+<span class="cstat-no" title="statement not covered" >import { NavbarContainer, NavbarOptions } from './styledComponents'</span>
 &nbsp;
-const Navbar: FC = () =&gt; {
-  return (
+const Navbar: FC = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >() =</span>&gt; {</span>
+<span class="cstat-no" title="statement not covered" >  return (</span>
     &lt;NavbarContainer&gt;
       &lt;CustomLink to='/' $nav ariaLabel='home-navbar-link'&gt;
         &lt;span style={{ userSelect: 'none' }}&gt;&amp;lambda;dminis&lt;/span&gt;
       &lt;/CustomLink&gt;
       &lt;NavbarOptions&gt;
         &lt;IconRenderer /&gt;
-        {allNavbarOptions.map((option, i) =&gt; (
-          &lt;NavbarOption
+        {allNavbarOptions.map(<span class="fstat-no" title="function not covered" >(o</span>ption, i) =&gt; (
+<span class="cstat-no" title="statement not covered" >          &lt;NavbarOption</span>
             {...option}
             key={`${i}-${option.label}`}
             ariaLabel={option.label}
@@ -152,7 +152,7 @@ const Navbar: FC = () =&gt; {
   )
 }
 &nbsp;
-export default Navbar
+<span class="cstat-no" title="statement not covered" >export default Navbar</span>
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -160,7 +160,7 @@ export default Navbar
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-11-28T16:41:32.269Z
+                at 2023-11-29T11:59:19.557Z
             </div>
         <script src="../../../../prettify.js"></script>
         <script>
