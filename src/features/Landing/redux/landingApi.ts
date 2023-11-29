@@ -1,10 +1,24 @@
+import { gql } from '@apollo/client'
+import { client } from 'src/main'
+
 export const fetchGithubReposCall = async () => {
-  // const { data } = await axios.get<any[]>(
-  //   'https://api.github.com/users/AdminAkai/repos'
-  // )
+  const { data } = await client.query({
+    query: gql`
+      query {
+        user(login: "AdminAkai") {
+          pinnedItems(first: 6, types: REPOSITORY) {
+            nodes {
+              ... on Repository {
+                name
+                description
+                url
+              }
+            }
+          }
+        }
+      }
+    `,
+  })
 
-  // return data
-  const data: any[] = []
-
-  return data
+  return data?.user?.pinnedItems?.nodes
 }

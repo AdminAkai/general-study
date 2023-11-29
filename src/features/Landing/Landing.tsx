@@ -46,9 +46,9 @@ const Landing: FC = () => {
       </LandingPageLogo>
       <Grid panels={githubRepos.length}>
         {githubRepos.length !== 0 &&
-          githubRepos.map(({ name, description, html_url }, index) => (
+          githubRepos.map(({ name, description, url }, index) => (
             <GridPanel key={`${name}-${index}`}>
-              <CustomLink to={html_url} ariaLabel={name}>
+              <CustomLink to={url} ariaLabel={name}>
                 {name}
               </CustomLink>
               <PanelDescription>{description}</PanelDescription>

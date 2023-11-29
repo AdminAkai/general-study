@@ -27,30 +27,17 @@ const authLink = setContext((_, { headers }) => {
   return {
     headers: {
       ...headers,
-      authorization: process.env.secrets ? `Bearer ${process.env.secrets}` : '',
+      authorization: import.meta.env.VITE_GITHUB_API
+        ? `Bearer ${import.meta.env.VITE_GITHUB_API}`
+        : '',
     },
   }
 })
 
-const client = new ApolloClient({
+export const client = new ApolloClient({
   link: authLink.concat(httpLink),
   cache: new InMemoryCache(),
 })
-
-client
-  .query({
-    query: gql`
-      query GetLocations {
-        locations {
-          id
-          name
-          description
-          photo
-        }
-      }
-    `,
-  })
-  .then((result) => console.log(result))
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
