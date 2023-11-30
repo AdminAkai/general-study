@@ -21,10 +21,10 @@ function* fetchGithubRepos(): Generator<
 }
 
 // Watcher Sagas
-function* watchUpdateGithubRepos() {
+function* watchFetchGithubRepo() {
   yield takeLatest(fetchGithubReposStart, fetchGithubRepos)
 }
 
-const landingSagas = [fork(watchUpdateGithubRepos)]
+const landingSagas = [fork(watchFetchGithubRepo)]
 
 export default landingSagas

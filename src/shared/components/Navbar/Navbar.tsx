@@ -1,19 +1,17 @@
 import { FC } from 'react'
 
-import CustomLink from 'src/shared/components/CustomLink'
 import IconRenderer from 'src/shared/components/IconRenderer'
 
+import NavbarAdminis from './NavbarAdminis'
 import NavbarOption from './NavbarOption'
 
 import { allNavbarOptions } from './lib'
-import { NavbarContainer, NavbarOptions, NavbarTitle } from './styledComponents'
+import { NavbarContainer, NavbarOptions } from './styledComponents'
 
 const Navbar: FC = () => {
   return (
     <NavbarContainer>
-      <CustomLink to='/' nav ariaLabel='home-navbar-link'>
-        <NavbarTitle>&lambda;dminis</NavbarTitle>
-      </CustomLink>
+      <NavbarAdminis />
       <NavbarOptions>
         <IconRenderer />
         {allNavbarOptions.map((option, i) => (

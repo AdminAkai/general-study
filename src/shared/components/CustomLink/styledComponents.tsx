@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 export interface ICustomATagProps {
   $isActive?: boolean
+  $noUnderline?: boolean
 }
 
 export const CustomATag = styled(Link)<ICustomATagProps>`
@@ -17,7 +18,7 @@ export const CustomATag = styled(Link)<ICustomATagProps>`
   }
 
   &:hover:after {
-    transform: scaleX(1);
+    transform: ${({ $noUnderline }) => ($noUnderline ? null : 'scaleX(1)')};
   }
 
   font-size: 1.5rem;

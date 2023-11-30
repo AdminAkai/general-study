@@ -1,12 +1,13 @@
-import { FC } from 'react'
+import { FC, useEffect } from 'react'
 
 import CustomLink from 'src/shared/components/CustomLink'
+import ScrambleText from 'src/shared/components/ScrambleText'
 
-import { useHackerScramble } from 'src/shared/hooks/stringHooks'
-
-import { useAppSelector } from 'src/shared/redux/store'
+import { useAppDispatch, useAppSelector } from 'src/shared/redux/store'
 import { selectLanguage } from 'src/shared/redux/settingsSlice/selectors'
 import { Language } from 'src/shared/redux/settingsSlice/initialState'
+
+import { fetchChangelogStart } from './redux/changelogActions'
 
 import { logs, sourceCodeLink } from './lib'
 
@@ -17,20 +18,28 @@ import {
   ChangelogSubtitle,
 } from './styledComponents'
 
+const header = 'Chλngelog'
+const subtitle = 'Source Code:'
+
 const Changelog: FC = () => {
-  const header = useHackerScramble('Chλngelog')
-  const subtitle = useHackerScramble('Source Code:')
-  const link = useHackerScramble(sourceCodeLink)
+  const dispatch = useAppDispatch()
 
   const language: Language = useAppSelector(selectLanguage)
 
+  useEffect(() => {
+    dispatch(fetchChangelogStart())
+  }, [])
+
   return (
     <ChangelogContainer>
-      <ChangelogHeader>{header}</ChangelogHeader>
+      <ChangelogHeader>
+        <ScrambleText text={header} />
+      </ChangelogHeader>
       <ChangelogSubtitle>
-        {subtitle}&nbsp;
+        <ScrambleText text={subtitle} />
+        &nbsp;
         <CustomLink to={sourceCodeLink} ariaLabel='Website Github Repo'>
-          {link}
+          <ScrambleText text={sourceCodeLink} />
         </CustomLink>
       </ChangelogSubtitle>
       {logs.map((log) =>

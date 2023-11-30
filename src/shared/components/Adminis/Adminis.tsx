@@ -1,15 +1,13 @@
 import { FC } from 'react'
 
-import { useHackerScramble } from 'src/shared/hooks/stringHooks'
+import ScrambleText from '../ScrambleText'
 
-const Adminis: FC = () => {
-  const word: string = useHackerScramble('λdminis')
+const AdminisTitle = 'λdminis'
 
-  return (
-    <span style={{ userSelect: 'none' }} aria-label='Adminis Title'>
-      {word}
-    </span>
-  )
-}
+const Adminis: FC = () => (
+  <span style={{ userSelect: 'none' }} aria-label='Adminis Title'>
+    <ScrambleText text={AdminisTitle} />
+  </span>
+)
 
 export default Adminis

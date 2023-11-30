@@ -1,11 +1,12 @@
 import { FC, useEffect } from 'react'
 
-import { useHackerScramble } from 'src/shared/hooks/stringHooks'
-
 import Grid from 'src/shared/components/Grid'
 import GridPanel from 'src/shared/components/GridPanel'
 import Adminis from 'src/shared/components/Adminis'
 import PanelDescription from 'src/shared/components/PanelDescription'
+import CustomLink from 'src/shared/components/CustomLink'
+import ScrambleText from 'src/shared/components/ScrambleText'
+
 import { useAppDispatch, useAppSelector } from 'src/shared/redux/store'
 
 import { fetchGithubReposStart } from './redux/landingActions'
@@ -19,15 +20,14 @@ import {
   LandingPageSubtitle,
   LandingPageTitle,
 } from './styledComponents'
-import CustomLink from 'src/shared/components/CustomLink'
+
+const subtitle = 'Administrate you.'
+const underConstruction = 'Under Construction (・-・)7'
 
 const Landing: FC = () => {
   const dispatch = useAppDispatch()
 
   const githubRepos: any[] = useAppSelector(selectGithubRepos)
-
-  const subtitle = useHackerScramble('Administrate you.')
-  const underConstruction = useHackerScramble('Under Construction (・-・)7')
 
   useEffect(() => {
     dispatch(fetchGithubReposStart())
@@ -40,8 +40,12 @@ const Landing: FC = () => {
           <Adminis />
         </LandingPageTitle>
         <LandingPageSubtext>
-          <LandingPageSubtitle>{subtitle}</LandingPageSubtitle>
-          <LandingPageConstruction>{underConstruction}</LandingPageConstruction>
+          <LandingPageSubtitle>
+            <ScrambleText text={subtitle} />
+          </LandingPageSubtitle>
+          <LandingPageConstruction>
+            <ScrambleText text={underConstruction} />
+          </LandingPageConstruction>
         </LandingPageSubtext>
       </LandingPageLogo>
       <Grid panels={githubRepos.length}>
