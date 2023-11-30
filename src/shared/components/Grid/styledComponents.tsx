@@ -5,7 +5,6 @@ export const MainGrid = styled.div<{ $gridPanels: number }>`
   height: 100%;
   width: 100%;
   display: grid;
-  background-color: ${({ theme }) => theme.primary};
   grid-template-columns: ${({ $gridPanels }) => `repeat(${$gridPanels}, 1fr)`};
   grid-template-rows: ${({ $gridPanels }) => `repeat(${$gridPanels / 3}, 1fr)`};
   grid-auto-rows: 1fr;
