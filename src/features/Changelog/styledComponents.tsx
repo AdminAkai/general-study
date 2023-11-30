@@ -9,7 +9,6 @@ export const ChangelogContainer = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: ${({ theme }) => theme.primary};
 
   @media screen and (max-width: ${({ theme }) => theme.mobileMediaQuery}) {
     padding: 1.5rem;

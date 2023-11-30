@@ -1,6 +1,5 @@
 import { FC } from 'react'
 
-import CustomLink from 'src/shared/components/CustomLink'
 import GridPanel from 'src/shared/components/GridPanel'
 import PanelDescription from 'src/shared/components/PanelDescription'
 
@@ -16,9 +15,7 @@ const ProjectCard: FC<IProjectCardProps> = ({ name, description, url }) => {
   return (
     <GridPanel>
       <ProjectCardContainer href={url} target='_blank'>
-        <CustomLink to={url} ariaLabel={name} noUnderline>
-          {name}
-        </CustomLink>
+        {name}
         <PanelDescription>{description}</PanelDescription>
       </ProjectCardContainer>
     </GridPanel>
