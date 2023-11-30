@@ -5,10 +5,12 @@ import { CustomATag, ICustomATagProps } from './styledComponents'
 export interface ICustomLinkProps extends ICustomATagProps {
   to: string
   ariaLabel: string
+  nav?: boolean
 }
 
 const CustomLink: FC<PropsWithChildren<ICustomLinkProps>> = ({
   $isActive,
+  nav,
   to,
   children,
   ariaLabel,
@@ -16,7 +18,7 @@ const CustomLink: FC<PropsWithChildren<ICustomLinkProps>> = ({
   <CustomATag
     to={to}
     $isActive={$isActive}
-    target='_blank'
+    target={nav ? undefined : '_blank'}
     aria-label={ariaLabel}
   >
     {children}

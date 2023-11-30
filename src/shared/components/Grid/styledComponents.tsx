@@ -8,7 +8,7 @@ export const MainGrid = styled.div<{ $gridPanels: number }>`
   background-color: ${({ theme }) => theme.priamry};
   grid-template-columns: ${({ $gridPanels }) => `repeat(${$gridPanels}, 1fr)`};
   grid-template-rows: ${({ $gridPanels }) => `repeat(${$gridPanels}, 1fr)`};
-  gap: 0.3rem;
+  gap: 1rem;
 
   @media screen and (max-width: ${({ theme }) => theme.mobileMediaQuery}) {
     text-align: center;

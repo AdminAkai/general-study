@@ -11,7 +11,7 @@ import { NavbarContainer, NavbarOptions, NavbarTitle } from './styledComponents'
 const Navbar: FC = () => {
   return (
     <NavbarContainer>
-      <CustomLink to='/' ariaLabel='home-navbar-link'>
+      <CustomLink to='/' nav ariaLabel='home-navbar-link'>
         <NavbarTitle>&lambda;dminis</NavbarTitle>
       </CustomLink>
       <NavbarOptions>

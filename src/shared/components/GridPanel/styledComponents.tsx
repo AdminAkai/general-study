@@ -16,6 +16,8 @@ export const GridPanelBox = styled.div`
   justify-content: flex-start;
   align-items: center;
   box-sizing: border-box;
+  border: 1px solid ${({ theme }) => theme.Adminis};
+  border-radius: 8px;
   transition:
     box-shadow 0.3s ease-in-out,
     background-color 0.3s ease;
