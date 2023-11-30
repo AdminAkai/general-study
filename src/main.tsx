@@ -23,7 +23,7 @@ import './main.css'
   when Amplify Gen2 hosting feature is up and running will transition to that for hosting with environment secrets
 */
 const publicKey =
-  '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'
+  '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'
 
 const httpLink = createHttpLink({
   uri: 'https://api.github.com/graphql',
@@ -33,7 +33,7 @@ const authLink = setContext((_, { headers }) => {
   return {
     headers: {
       ...headers,
-      authorization: publicKey ? `Bearer ${publicKey}` : '',
+      authorization: `bearer ${publicKey}`,
     },
   }
 })
