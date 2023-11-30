@@ -1,17 +1,18 @@
 import { FC } from 'react'
 
-import NavbarOption from 'src/shared/components/NavbarOption'
 import CustomLink from 'src/shared/components/CustomLink'
 import IconRenderer from 'src/shared/components/IconRenderer'
 
+import NavbarOption from './NavbarOption'
+
 import { allNavbarOptions } from './lib'
-import { NavbarContainer, NavbarOptions } from './styledComponents'
+import { NavbarContainer, NavbarOptions, NavbarTitle } from './styledComponents'
 
 const Navbar: FC = () => {
   return (
     <NavbarContainer>
-      <CustomLink to='/' $nav ariaLabel='home-navbar-link'>
-        <span style={{ userSelect: 'none' }}>&lambda;dminis</span>
+      <CustomLink to='/' ariaLabel='home-navbar-link'>
+        <NavbarTitle>&lambda;dminis</NavbarTitle>
       </CustomLink>
       <NavbarOptions>
         <IconRenderer />

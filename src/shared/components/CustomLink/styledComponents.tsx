@@ -4,15 +4,14 @@ import styled from 'styled-components'
 
 export interface ICustomATagProps {
   $isActive?: boolean
-  $nav?: boolean
 }
 
 export const CustomATag = styled(Link)<ICustomATagProps>`
   &:after {
     display: block;
     content: '';
-    border-bottom: 0.13rem solid
-      ${({ theme, $nav }) => ($nav ? theme.primary : theme.Adminis)};
+    border-bottom: 0.13rem solid;
+    ${({ theme }) => theme.Adminis};
     transform: ${({ $isActive }) => ($isActive ? 'scaleX(1)' : 'scaleX(0)')};
     transition: transform 0.2s ease-in-out;
   }
@@ -24,7 +23,7 @@ export const CustomATag = styled(Link)<ICustomATagProps>`
   font-size: 1.5rem;
   text-decoration: none;
   user-select: none;
-  color: ${({ theme, $nav }) => ($nav ? theme.primary : theme.Adminis)};
+  color: ${({ theme }) => theme.Adminis};
   text-align: center;
   font-style: normal;
   font-weight: 600;

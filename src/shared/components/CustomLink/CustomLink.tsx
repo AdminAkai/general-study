@@ -9,7 +9,6 @@ export interface ICustomLinkProps extends ICustomATagProps {
 
 const CustomLink: FC<PropsWithChildren<ICustomLinkProps>> = ({
   $isActive,
-  $nav,
   to,
   children,
   ariaLabel,
@@ -17,7 +16,6 @@ const CustomLink: FC<PropsWithChildren<ICustomLinkProps>> = ({
   <CustomATag
     to={to}
     $isActive={$isActive}
-    $nav={$nav}
     target='_blank'
     aria-label={ariaLabel}
   >
