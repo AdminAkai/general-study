@@ -8,10 +8,7 @@ Website deployed on Amazon S3 and Cloudfront, domain from Google Domains, routed
 
 **11/30/2023 v0.03**:
 
-- Fine grained Github API key is now a const in main
-
-  - INCREDIBLY dangerous if not for the fact that it's a readonly key and necessary for static deployment on AWS S3
-  - when Amplify Gen2 hosting feature is up and running will transition to that for hosting with environment secrets
+- Github GraphQL API now auths properly to grab all public pinned repos
 
 - Landing Page stylings changed slightly, Navbar stylings changed slightly
 

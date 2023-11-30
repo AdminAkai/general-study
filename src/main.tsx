@@ -18,12 +18,6 @@ import './assets/fonts/stylesheet.css'
 
 import './main.css'
 
-/* 
-  INCREDIBLY dangerous if not for the fact this is a fine-grained key, necessary for static deployment (for now),
-  when Amplify Gen2 hosting feature is up and running will transition to that for hosting with environment secrets
-*/
-const publicKey = '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'
-
 const httpLink = createHttpLink({
   uri: 'https://api.github.com/graphql',
 })
@@ -32,7 +26,7 @@ const authLink = setContext((_, { headers }) => {
   return {
     headers: {
       ...headers,
-      authorization: `bearer ${publicKey}`,
+      authorization: `Bearer ${import.meta.env.VITE_GITHUB_API}`,
     },
   }
 })
