@@ -10,7 +10,7 @@ import { NavbarContainer, NavbarOptions } from './styledComponents'
 
 const Navbar: FC = () => {
   return (
-    <NavbarContainer>
+    <NavbarContainer animate>
       <NavbarAdminis />
       <NavbarOptions>
         <IconRenderer />
