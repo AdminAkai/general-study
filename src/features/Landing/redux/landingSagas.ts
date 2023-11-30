@@ -9,7 +9,11 @@ import {
 import { AnyAction } from 'redux'
 
 import { fetchGithubReposStart } from './landingActions'
-import { setGithubRepos } from './landingSlice'
+import {
+  setGithubRepos,
+  setLandingErrors,
+  setLandingLoading,
+} from './landingSlice'
 import { fetchGithubReposCall } from './landingApi'
 
 // Worker Sagas
@@ -17,7 +21,16 @@ function* fetchGithubRepos(): Generator<
   CallEffect<any[]> | PutEffect<AnyAction>
 > {
   const githubRepos: any = yield call(fetchGithubReposCall)
-  yield put(setGithubRepos(githubRepos))
+  yield put(setLandingLoading())
+  yield put(setLandingErrors())
+  try {
+    yield put(setGithubRepos(githubRepos))
+  } catch (err) {
+    console.error(err)
+    yield put(setLandingErrors())
+  } finally {
+    yield put(setLandingLoading())
+  }
 }
 
 // Watcher Sagas

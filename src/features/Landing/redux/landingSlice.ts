@@ -10,9 +10,16 @@ const landingSlice = createSlice({
     setGithubRepos: (state, { payload }: PayloadAction<any[]>) => {
       state.githubRepos = payload
     },
+    setLandingLoading: (state) => {
+      state.loading = !state.loading
+    },
+    setLandingErrors: (state) => {
+      state.error = !state.error
+    },
   },
 })
 
-export const { setGithubRepos } = landingSlice.actions
+export const { setGithubRepos, setLandingLoading, setLandingErrors } =
+  landingSlice.actions
 
 export default landingSlice.reducer

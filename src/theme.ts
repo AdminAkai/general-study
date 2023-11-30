@@ -26,7 +26,7 @@ const styleDefaults: IStyleDefaults = {
   mobileMediaQuery: '959px',
 }
 
-const colors: IColors = {
+export const colors: IColors = {
   orange: '#fb7e14',
   black: '#000000',
   darkGray: '#151515',
