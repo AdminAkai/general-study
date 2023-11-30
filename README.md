@@ -9,18 +9,18 @@ Website deployed on Amazon S3 and Cloudfront, domain from Google Domains, routed
 **11/30/2023 v0.03**:
 
 - Fine grained Github API key is now a const in main
+
   - INCREDIBLY dangerous if not for the fact that it's a readonly key and necessary for static deployment on AWS S3
   - when Amplify Gen2 hosting feature is up and running will transition to that for hosting with environment secrets
 
 - Landing Page stylings changed slightly, Navbar stylings changed slightly
 
-
 - _Future Steps_:
+
   - Animations and design overhaul on website even prior to React Three conversion
     - Framer Motion library
     - Continue to improve temp site design and user flow
     - Improve accessibility options, include different colorblind modes
-  
   - Grab
 
 **11/28/2023 v0.02**:
