@@ -7,8 +7,8 @@ interface IChangelog {
 export const logs: IChangelog[] = [
   {
     date: '09/26/2023',
-    en: ['log1', 'log2'],
-    jp: ['log1', 'log2'],
+    en: ['Test Log', 'Test Log 2'],
+    jp: ['Test Log', 'Test Log 2'],
   },
 ]
 
