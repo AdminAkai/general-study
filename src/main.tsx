@@ -22,7 +22,7 @@ import './main.css'
   INCREDIBLY dangerous if not for the fact this is a fine-grained key, necessary for static deployment (for now),
   when Amplify Gen2 hosting feature is up and running will transition to that for hosting with environment secrets
 */
-const publicKey = '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'
+const publicKey = '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'
 
 const httpLink = createHttpLink({
   uri: 'https://api.github.com/graphql',
