@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import NavbarAdminis from './NavbarLogo'
+import NavbarLogo from './NavbarLogo'
 import NavbarOption from './NavbarOption'
 
 import { allNavbarOptions } from './lib'
@@ -9,7 +9,7 @@ import { NavbarContainer, NavbarOptions } from './styledComponents'
 const Navbar: FC = () => {
   return (
     <NavbarContainer animate>
-      <NavbarAdminis />
+      <NavbarLogo />
       <NavbarOptions>
         {allNavbarOptions.map((option, i) => (
           <NavbarOption

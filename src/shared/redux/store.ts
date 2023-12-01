@@ -15,9 +15,6 @@ import { useDispatch, TypedUseSelectorHook, useSelector } from 'react-redux'
 import createSagaMiddleware from '@redux-saga/core'
 import { all } from 'redux-saga/effects'
 
-import landingSagas from 'src/features/Landing/redux/landingSagas'
-import landingSlice from 'src/features/Landing/redux/landingSlice'
-
 import settingsSlice from './settingsSlice'
 
 const sagas = createSagaMiddleware()
@@ -29,7 +26,6 @@ const persistConfig = {
 
 const reducers = combineReducers({
   settings: settingsSlice,
-  landing: landingSlice,
 })
 
 const persistedReducer = persistReducer(persistConfig, reducers)
@@ -56,7 +52,7 @@ export const useAppDispatch: DispatchFunc = useDispatch
 export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector
 
 function* rootSaga() {
-  yield all([...landingSagas])
+  yield all([])
 }
 
 sagas.run(rootSaga)

@@ -1,3 +1,3 @@
-import NavbarAdminis from './NavbarLogo'
+import NavbarLogo from './NavbarLogo'
 
-export default NavbarAdminis
+export default NavbarLogo

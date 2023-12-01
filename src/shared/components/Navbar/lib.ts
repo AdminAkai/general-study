@@ -4,13 +4,4 @@ type AllNavbarOptionsType = Array<{
   nav?: boolean
 }>
 
-export const allNavbarOptions: AllNavbarOptionsType = [
-  {
-    label: 'About',
-    route: '/about',
-  },
-  {
-    label: 'Changelog',
-    route: '/changelog',
-  },
-]
+export const allNavbarOptions: AllNavbarOptionsType = []

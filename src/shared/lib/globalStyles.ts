@@ -14,13 +14,13 @@ const GlobalStyle = createGlobalStyle`
   }
 
   *::-webkit-scrollbar-track {
-    background: ${({ theme }) => theme.background.primary};
+    background: ${({ theme }) => theme.primary};
   }
 
   *::-webkit-scrollbar-thumb {
     background-color: #808080;
     border-radius: 10px;
-    border: 4px solid ${({ theme }) => theme.background.primary};
+    border: 4px solid ${({ theme }) => theme.primary};
   }
 `
 
