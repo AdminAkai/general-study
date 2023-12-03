@@ -1,5 +1,6 @@
 import { FC } from 'react'
 
+import IconRenderer from '../IconRenderer'
 import NavbarLogo from './NavbarLogo'
 import NavbarOption from './NavbarOption'
 
@@ -11,6 +12,7 @@ const Navbar: FC = () => {
     <NavbarContainer animate>
       <NavbarLogo />
       <NavbarOptions>
+        <IconRenderer />
         {allNavbarOptions.map((option, i) => (
           <NavbarOption
             {...option}
