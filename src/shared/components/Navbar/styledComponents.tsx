@@ -8,7 +8,7 @@ export const NavbarContainer = styled(motion.nav)`
   align-items: center;
   width: 100%;
   background: transparent;
-  padding: 2rem 3rem;
+  padding: var(--padding-extra-large) var(--padding-huge);
 `
 export const NavbarOptions = styled.div`
   display: flex;

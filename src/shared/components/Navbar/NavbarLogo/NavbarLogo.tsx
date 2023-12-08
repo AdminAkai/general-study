@@ -6,7 +6,7 @@ import { LogoContainer } from './styledComponents'
 
 const NavbarLogo: FC = () => (
   <CustomLink to='/' noUnderline nav ariaLabel='home-navbar-link'>
-    <LogoContainer>Test</LogoContainer>
+    <LogoContainer>React Interview Study</LogoContainer>
   </CustomLink>
 )
 

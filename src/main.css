@@ -1,4 +1,27 @@
-
+/* 3.5vw good proportional width */
+:root {
+  --title: clamp(2rem, 3.5vw, 4rem); /* 64px */
+  --subtitle: clamp(0.75rem, 3.5vw, 1.5rem); /* 24px */
+  --footer-tagline: clamp(0.5rem, 3.5vw, 1rem); /* 16px */
+  --padding-small: 0.25rem; /* 4px */
+  --padding-medium: 0.5rem; /* 8px */
+  --padding-large: 1rem; /* 16px */
+  --padding-extra-large: 2rem; /* 48px */
+  --padding-huge: 3rem; /* 48px */
+  --spacing-small: clamp(0.5rem, 3.5vw, 1rem); /* 16px */
+  --spacing-medium: clamp(0.75rem, 3.5vw, 1.5rem); /* 24px */
+  --spacing-large: clamp(1rem, 3.5vw, 2rem); /* 32px */
+  --spacing-extra-large: clamp(1.5rem, 3.5vw, 3rem); /* 48px */
+  --spacing-page: clamp(3rem, 3.5vw, 6rem); /* 96px */
+  --spacing-page-side: clamp(8.25rem, 3.5vw, 16.5rem); /* 264px */
+  --border-radius-small: 16px;
+  --border-radius-normal: 24px;
+  --color-blue: '#002366';
+  --color-black: '#122333';
+  --color-gray: '#c5d5e5';
+  --color-white: '#FFFFF0';
+  --color-red: '#DC143C';
+}
 *,
 *::before,
 *::after {

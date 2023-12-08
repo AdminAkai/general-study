@@ -1,24 +1,22 @@
 import { FC } from 'react'
 
 import {
-  LandingPageConstruction,
   LandingPageContainer,
-  LandingPageLogo,
-  LandingPageSubtext,
-  LandingPageSubtitle,
-  LandingPageTitle,
+  QuestionDivider,
+  QuestionHeader,
+  QuestionSection,
 } from './styledComponents'
 
 const Landing: FC = () => {
   return (
     <LandingPageContainer>
-      <LandingPageLogo>
-        <LandingPageTitle></LandingPageTitle>
-        <LandingPageSubtext>
-          <LandingPageSubtitle></LandingPageSubtitle>
-          <LandingPageConstruction></LandingPageConstruction>
-        </LandingPageSubtext>
-      </LandingPageLogo>
+      <QuestionSection>
+        <QuestionHeader>
+          <h3>Question</h3>
+          <QuestionDivider />
+        </QuestionHeader>
+        Answer
+      </QuestionSection>
     </LandingPageContainer>
   )
 }
