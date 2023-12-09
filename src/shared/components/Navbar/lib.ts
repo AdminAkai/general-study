@@ -4,4 +4,10 @@ type AllNavbarOptionsType = Array<{
   nav?: boolean
 }>
 
-export const allNavbarOptions: AllNavbarOptionsType = []
+export const allNavbarOptions: AllNavbarOptionsType = [
+  {
+    label: 'FizzBuzz',
+    route: '/fizzbuzz',
+    nav: true,
+  },
+]
