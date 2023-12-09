@@ -49,7 +49,7 @@ const FizzBuzz: FC = () => {
       <FizzBuzzInput onChange={handleChange} type='number' value={input} />
       <FizzBuzzSubmit onClick={handleFizzBuzz}>FizzBuzz</FizzBuzzSubmit>
       <FizzBuzzDisplay>
-        The FizzBuzz from {input}: {fizzBuzzValue}
+        The FizzBuzz from {input || 'input'}: {fizzBuzzValue}
       </FizzBuzzDisplay>
     </FizzBuzzContainer>
   )
