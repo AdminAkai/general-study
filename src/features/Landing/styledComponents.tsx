@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export const LandingPageContainer = styled.div`
   width: 100%;
-  height: 100%;
   padding: 0 var(--padding-huge);
   display: flex;
   flex-direction: column;
@@ -11,7 +10,7 @@ export const LandingPageContainer = styled.div`
   gap: var(--spacing-extra-large);
 
   @media screen and (max-width: ${({ theme }) => theme.mobileMediaQuery}) {
-    height: 100vh;
+    height: 100dvh;
     padding: 1.5rem;
     flex-direction: column;
     justify-content: flex-start;

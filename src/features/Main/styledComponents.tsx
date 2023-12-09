@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const MainContainer = styled.div`
   width: 100%;
-  height: 100dvh;
+  min-height: 100dvh;
   flex-direction: column;
   display: flex;
   justify-content: flex-start;

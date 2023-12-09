@@ -2,8 +2,7 @@ import styled from 'styled-components'
 
 export const FizzBuzzContainer = styled.div`
   width: 100%;
-  height: 100%;
-  padding: 0 var(--padding-huge);
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,6 +22,9 @@ export const FizzBuzzInput = styled.input`
 `
 
 export const FizzBuzzSubmit = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 4px;
   background: none;
   color: ${({ theme }) => theme.Adminis};
@@ -38,6 +40,9 @@ export const FizzBuzzSubmit = styled.button`
   }
 `
 export const FizzBuzzHeader = styled.h1`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 2rem;
   color: ${({ theme }) => theme.Adminis};
   padding: 0;
