@@ -46,9 +46,14 @@ const FizzBuzz: FC = () => {
   return (
     <FizzBuzzContainer>
       <FizzBuzzHeader>Enter a number to FizzBuzz here!</FizzBuzzHeader>
-      <FizzBuzzInput onChange={handleChange} type='number' value={input} />
+      <FizzBuzzInput
+        aria-label='FizzBuzz Input'
+        onChange={handleChange}
+        type='number'
+        value={input}
+      />
       <FizzBuzzSubmit onClick={handleFizzBuzz}>FizzBuzz</FizzBuzzSubmit>
-      <FizzBuzzDisplay>
+      <FizzBuzzDisplay aria-label='FizzBuzz Display'>
         The FizzBuzz from {input || 'input'}: {fizzBuzzValue}
       </FizzBuzzDisplay>
     </FizzBuzzContainer>

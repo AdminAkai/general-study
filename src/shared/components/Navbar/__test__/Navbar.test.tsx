@@ -19,10 +19,10 @@ describe('Navbar tests', () => {
         </BrowserRouter>
       </Provider>
     )
-    const AboutOption = screen.getByText('About')
-    const AdminisTitle = screen.getByText('λdminis')
-    expect(AboutOption).toBeInTheDocument()
-    expect(AdminisTitle).toBeInTheDocument()
+    const FizzBuzzOption = screen.getByText('Fizz Buzz')
+    const ColorChangeSquareOption = screen.getByText('Color Change Square')
+    expect(FizzBuzzOption).toBeInTheDocument()
+    expect(ColorChangeSquareOption).toBeInTheDocument()
   })
 
   it('Make sure navbar light/dark mode toggle functions', async () => {

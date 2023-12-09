@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FizzBuzz tests Navbar snapshot renders correctly 1`] = `
+<div
+  className="sc-beyTiQ iIkXX"
+>
+  <h1
+    className="sc-hLQTFJ clRMBF"
+  >
+    Enter a number to FizzBuzz here!
+  </h1>
+  <input
+    aria-label="FizzBuzz Input"
+    className="sc-guDMob fvXIsm"
+    onChange={[Function]}
+    type="number"
+    value=""
+  />
+  <button
+    className="sc-dmyDmy fFvcGr"
+    onClick={[Function]}
+  >
+    FizzBuzz
+  </button>
+  <div
+    aria-label="FizzBuzz Display"
+    className="sc-eDLKEg esEbxC"
+  >
+    The FizzBuzz from 
+    input
+    : 
+  </div>
+</div>
+`;

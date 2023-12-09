@@ -6,10 +6,9 @@ exports[`Navbar Option tests Navbar Option snapshot renders correctly 1`] = `
 >
   <a
     aria-label="About"
-    className="sc-beyTiQ igHIIw"
+    className="sc-beyTiQ csJOCc"
     href="/about"
     onClick={[Function]}
-    target="_blank"
   >
     About
   </a>
