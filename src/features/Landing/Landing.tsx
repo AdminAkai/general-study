@@ -1,7 +1,10 @@
 import { FC } from 'react'
 
+import { QuestionsAnswers } from './lib'
 import {
+  Answer,
   LandingPageContainer,
+  Question,
   QuestionDivider,
   QuestionHeader,
   QuestionSection,
@@ -10,13 +13,15 @@ import {
 const Landing: FC = () => {
   return (
     <LandingPageContainer>
-      <QuestionSection>
-        <QuestionHeader>
-          <h3>Question</h3>
-          <QuestionDivider />
-        </QuestionHeader>
-        Answer
-      </QuestionSection>
+      {QuestionsAnswers.map(({ question, answer }) => (
+        <QuestionSection>
+          <QuestionHeader>
+            <Question>{question}</Question>
+            <QuestionDivider />
+          </QuestionHeader>
+          <Answer>{answer}</Answer>
+        </QuestionSection>
+      ))}
     </LandingPageContainer>
   )
 }
