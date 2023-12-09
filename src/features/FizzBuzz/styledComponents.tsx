@@ -50,7 +50,8 @@ export const FizzBuzzHeader = styled.h1`
 `
 
 export const FizzBuzzDisplay = styled.div`
-  text-align: center;
+  text-align: left;
+  padding: 0 2rem;
   font-size: 2rem;
   color: ${({ theme }) => theme.Adminis};
 `
