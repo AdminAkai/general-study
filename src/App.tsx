@@ -10,6 +10,7 @@ import FizzBuzz from 'src/features/FizzBuzz'
 
 import GlobalStyle from './shared/lib/globalStyles'
 import theme from './shared/lib/theme'
+import ColorChangeSquare from './features/ColorChangeSquare'
 
 function App() {
   const mode = useAppSelector(selectMode)
@@ -22,6 +23,10 @@ function App() {
           <Route path='/' element={<Main />}>
             <Route index element={<Landing />} />
             <Route path='/fizzbuzz' element={<FizzBuzz />} />
+            <Route
+              path='/color-change-square'
+              element={<ColorChangeSquare />}
+            />
           </Route>
         </Routes>
       </BrowserRouter>

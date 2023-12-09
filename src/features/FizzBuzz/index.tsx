@@ -1,3 +1,3 @@
-import Landing from './loadable'
+import FizzBuzz from './loadable'
 
-export default Landing
+export default FizzBuzz

@@ -10,4 +10,9 @@ export const allNavbarOptions: AllNavbarOptionsType = [
     route: '/fizzbuzz',
     nav: true,
   },
+  {
+    label: 'ColorChangeSquare',
+    route: '/color-change-square',
+    nav: true,
+  },
 ]
