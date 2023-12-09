@@ -84,4 +84,31 @@ export const QuestionsAnswers: QuestionAnswer[] = [
     answer:
       "Its important because when the component unmounts the listener remains as it is attached to the window, so you want to avoid memory leaks by cleaning it up, but also because on every re-render it'll attach a new event listener to the window.",
   },
+  {
+    question:
+      'Javascript is a statically typed or a dynamically typed language',
+    answer: 'Dynamically typed',
+  },
+  {
+    question: 'What are the three ways to define a variable in Javascript',
+    answer: 'var, let, and const',
+  },
+  {
+    question: 'Whats "NaN" in Javascript',
+    answer: 'Not a Number',
+  },
+  {
+    question: 'What are the lifecycles of components in React',
+    answer: 'Mounting, updating, and unmounting',
+  },
+  {
+    question: 'Whats the difference between props and state',
+    answer:
+      'Props (properties) is data passed down to the component from a HoC, while state is internal to the component itself',
+  },
+  {
+    question: "What's Redux",
+    answer:
+      'Redux is a global state management library, where the state tree is stored in a "store", and the way to update the state tree is by dispatching events (known as actions) to the store',
+  },
 ]
