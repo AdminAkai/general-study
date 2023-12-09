@@ -6,12 +6,12 @@ type AllNavbarOptionsType = Array<{
 
 export const allNavbarOptions: AllNavbarOptionsType = [
   {
-    label: 'FizzBuzz',
+    label: 'Fizz Buzz',
     route: '/fizzbuzz',
     nav: true,
   },
   {
-    label: 'ColorChangeSquare',
+    label: 'Color Change Square',
     route: '/color-change-square',
     nav: true,
   },
